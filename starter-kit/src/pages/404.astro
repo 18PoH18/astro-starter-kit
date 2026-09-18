@@ -1,0 +1,90 @@
+---
+// src/pages/404.astro
+import Base from '../layouts/Base.astro';
+import { site } from '../config/site';
+---
+
+<Base title="Page Not Found">
+  <div class="not-found">
+    <div class="container">
+      <div class="not-found-content">
+        <span class="not-found-eyebrow">404</span>
+        <h1 class="not-found-title">Page Not Found</h1>
+        <p class="not-found-description">
+          The page you're looking for doesn't exist, or may have been moved.
+        </p>
+        <a href="/" class="not-found-cta">
+          Back to {site.businessName}
+        </a>
+      </div>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .not-found {
+    min-height: 60vh;
+    min-height: 60dvh;
+    display: flex;
+    align-items: center;
+    background: var(--color-surface);
+    padding: 4rem 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .not-found-content {
+    text-align: center;
+    max-width: 24rem;
+    margin: 0 auto;
+  }
+
+  .not-found-eyebrow {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: 0.75rem;
+  }
+
+  .not-found-title {
+    font-family: var(--font-display), serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0 0 1rem;
+    color: var(--color-text);
+  }
+
+  .not-found-description {
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--color-muted);
+    margin: 0 0 2rem;
+  }
+
+  .not-found-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.75rem;
+    background: var(--color-accent);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 9999px;
+    transition: background 0.15s ease, transform 0.15s ease;
+  }
+
+  .not-found-cta:hover {
+    background: color-mix(in srgb, var(--color-accent) 85%, #000);
+    transform: translateY(-1px);
+  }
+</style>

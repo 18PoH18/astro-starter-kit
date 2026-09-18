@@ -1,0 +1,130 @@
+---
+// src/layouts/Base.astro
+// The shell: <head>, header, footer, SEO meta, analytics.
+// Every page extends this via `layout="Base.astro"`.
+import '../styles/global.css';
+import { site } from '../config/site';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+export interface Props {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+  canonical?: string;
+}
+
+const {
+  title,
+  description = site.description,
+  ogImage = '/og-image.png',
+  canonical = Astro.url?.pathname ?? '/',
+} = Astro.props;
+
+const fullTitle = title ? `${title} — ${site.businessName}` : site.businessName;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="keywords" content={site.keywords.join(', ')} />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url?.origin + canonical} />
+    <meta property="og:image" content={Astro.url?.origin + ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={Astro.url?.origin + ogImage} />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href={Astro.url?.origin + canonical} />
+
+    <!-- Page title -->
+    <title>{fullTitle}</title>
+
+    <!-- Fonts: Playfair Display + Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Local business structured data (JSON-LD) -->
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'LocalBusiness',
+        'name': site.businessName,
+        'description': site.description,
+        'telephone': site.phone,
+        'email': site.email,
+        'address': {
+          '@type': 'PostalAddress',
+          'streetAddress': site.address.split(',')[0].trim(),
+          'addressLocality': 'Portland',
+          'addressRegion': 'OR',
+          'postalCode': '97210',
+          'addressCountry': 'US',
+        },
+        'priceRange': '$$',
+        'openingHoursSpecification': Object.entries(site.hours)
+          .map(([day, hours]) => ({
+            '@type': 'OpeningHoursSpecification',
+            'dayOfWeek': day.charAt(0).toUpperCase() + day.slice(1).toLowerCase(),
+            'opens': hours.split('–')[0].trim().split(' ')[0] + ':00',
+            'closes': hours.split('–')[1]
+              .trim()
+              .split(' ')[0]
+              .replace(/(AM|PM)/gi, (m) =>
+                m === 'AM' ? 'AM' : 'PM'
+              ) +
+              ':00',
+          }))
+          .filter((oh) => oh.opens && oh.closes),
+      })}
+    />
+
+    <!-- Analytics: Plausible (opt-in) -->
+    {site.analytics.plausible && (
+      <script
+        defer
+        data-domain={Astro.url?.hostname?.replace('www.', '') ?? 'example.com'}
+        src={site.analytics.plausible}
+      />
+    )}
+
+    <!-- Analytics: GA4 (opt-in) -->
+    {typeof site.analytics.ga4 === 'string' && (
+      <script set:html={site.analytics.ga4} />
+    )}
+  </head>
+  <body
+    class="min-h-screen flex flex-col bg-[var(--color-bg)] text-[var(--color-text)]"
+    style={`--color-bg: ${site.theme.background}; --color-text: ${site.theme.text}; --color-muted: ${site.theme.mutedText}; --color-surface: ${site.theme.surface}; --color-primary: ${site.theme.primary}; --color-accent: ${site.theme.accent};`}
+  >
+    <Header />
+
+    <main class="flex-1">
+      <slot />
+    </main>
+
+    <Footer />
+  </body>
+</html>

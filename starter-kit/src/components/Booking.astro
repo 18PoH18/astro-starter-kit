@@ -1,0 +1,136 @@
+---
+// src/components/Booking.astro
+import { site } from '../config/site';
+---
+
+{site.showBooking === true && site.booking?.calendlyUrl && (
+  <section class="booking" aria-labelledby="booking-heading">
+    <div class="booking-card">
+      <div class="booking-content">
+        <span class="section-eyebrow">Reserve a Time</span>
+        <h2 id="booking-heading" class="booking-title">Book a Consultation</h2>
+        <p class="booking-description">
+          Schedule a free 30-minute call to discuss how we can help with your project.
+        </p>
+        <a
+          href={site.booking.calendlyUrl}
+          class="booking-cta"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open booking in a new tab"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+            <polyline points="15 3 21 3 21 9"/>
+            <line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+          Book Now — opens in a new tab
+        </a>
+      </div>
+
+      <div class="booking-embed">
+        <iframe
+          src={`${site.booking.calendlyUrl}/simple`}
+          width="100%"
+          height="520"
+          style="border: 0; border-radius: 0.75rem;"
+          title="Calendly booking page"
+          allow="calendar"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+)}
+
+<style>
+  .booking {
+    padding: 5rem 0;
+    background: var(--color-primary);
+    color: #fff;
+  }
+
+  .booking-card {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .section-eyebrow {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: 0.75rem;
+  }
+
+  .booking-title {
+    font-family: var(--font-display), serif;
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    margin: 0 0 1rem;
+    line-height: 1.2;
+  }
+
+  .booking-description {
+    font-size: 1rem;
+    line-height: 1.65;
+    opacity: 0.85;
+    margin: 0 0 1.5rem;
+    max-width: 24rem;
+  }
+
+  .booking-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--color-accent);
+    color: #fff;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 9999px;
+    transition: background 0.15s ease, transform 0.15s ease;
+  }
+
+  .booking-cta:hover {
+    background: color-mix(in srgb, var(--color-accent) 85%, #000);
+    transform: translateY(-1px);
+  }
+
+  .booking-embed iframe {
+    width: 100%;
+    border: none;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px color-mix(in srgb, #000 20%, transparent);
+  }
+
+  @media (min-width: 768px) {
+    .booking-card {
+      flex-direction: row;
+      align-items: stretch;
+      gap: 3rem;
+    }
+
+    .booking-content {
+      flex: 0 0 38%;
+    }
+
+    .booking-embed {
+      flex: 1;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .booking-embed iframe {
+      height: 460px;
+    }
+  }
+</style>

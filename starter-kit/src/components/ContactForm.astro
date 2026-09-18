@@ -1,0 +1,209 @@
+---
+// src/components/ContactForm.astro
+// Formspree AJAX integration (CDN, no bundler).
+// Form ID comes from site config (owned by the client).
+import { site } from '../config/site';
+
+const FORM_ID =
+  site.contact?.formspreeFormId ??
+  'xzezbqko'; // fallback for demo; real client sets this in site.ts
+---
+
+<div class="contact-form-wrapper">
+  <div data-fs-success aria-live="polite"></div>
+  <div data-fs-error aria-live="assertive"></div>
+
+  <form id="contact-form" novalidate>
+    <div class="form-group">
+      <label for="cf-name">Name</label>
+      <input
+        type="text"
+        id="cf-name"
+        name="name"
+        data-fs-field
+        placeholder="Your name"
+        autocomplete="name"
+        required
+      />
+      <span data-fs-error="name"></span>
+    </div>
+
+    <div class="form-group">
+      <label for="cf-email">Email</label>
+      <input
+        type="email"
+        id="cf-email"
+        name="email"
+        data-fs-field
+        placeholder="you@example.com"
+        autocomplete="email"
+        required
+      />
+      <span data-fs-error="email"></span>
+    </div>
+
+    <div class="form-group">
+      <label for="cf-message">Message</label>
+      <textarea
+        id="cf-message"
+        name="message"
+        data-fs-field
+        rows="5"
+        placeholder="How can we help?"
+        required
+      ></textarea>
+      <span data-fs-error="message"></span>
+    </div>
+
+    <button type="submit" data-fs-submit-btn class="submit-btn">
+      Send Message
+    </button>
+  </form>
+</div>
+
+<script client:load>
+  (function () {
+    window.formspree =
+      window.formspree ||
+      function () {
+        (window.formspree.q = window.formspree.q || []).push(arguments);
+      };
+
+    window.formspree('initForm', {
+      formElement: '#contact-form',
+      formId: '${FORM_ID}',
+    });
+  })();
+</script>
+
+<style>
+  .contact-form-wrapper {
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  #contact-form {
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+  }
+
+  label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text);
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.75rem 0.875rem;
+    border: 1px solid color-mix(in srgb, var(--color-text) 12%, transparent);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-family: inherit;
+    background: var(--color-bg);
+    color: var(--color-text);
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    box-sizing: border-box;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: color-mix(in srgb, var(--color-text) 25%, transparent);
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-accent) 25%, transparent);
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  .submit-btn {
+    align-self: start;
+    padding: 0.75rem 1.75rem;
+    background: var(--color-accent);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s ease, transform 0.15s ease;
+    font-family: inherit;
+  }
+
+  .submit-btn:hover {
+    background: color-mix(in srgb, var(--color-accent) 85%, #000);
+    transform: translateY(-1px);
+  }
+
+  .submit-btn:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  .submit-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  /* Formspree AJAX library data attributes — hidden until active */
+  [data-fs-error],
+  [data-fs-success] {
+    display: none;
+  }
+
+  [data-fs-error][data-fs-active] {
+    display: block;
+    color: #b91c1c;
+    font-size: 0.8125rem;
+    line-height: 1.4;
+  }
+
+  [data-fs-error=''][data-fs-active] {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #991b1b;
+  }
+
+  [data-fs-error]:not([data-fs-error=''])[data-fs-active] {
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+    color: #b91c1c;
+  }
+
+  [data-fs-success][data-fs-active] {
+    display: block;
+    padding: 0.875rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.9375rem;
+    background: #f0fdf4;
+    color: #15803d;
+    border: 1px solid #bbf7d0;
+    font-weight: 500;
+  }
+
+  [data-fs-field][aria-invalid='true'] {
+    border-color: #dc2626;
+    box-shadow: 0 0 0 3px color-mix(in srgb, #dc2626 20%, transparent);
+  }
+</style>

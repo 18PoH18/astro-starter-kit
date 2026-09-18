@@ -1,0 +1,113 @@
+---
+// src/components/About.astro
+import { site } from '../config/site';
+---
+
+{site.showAbout !== false && (
+  <section class="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="section-eyebrow">About</span>
+          <h2 id="about-heading" class="about-title">{site.about.title}</h2>
+          <p class="about-body">{site.about.body}</p>
+        </div>
+
+        {site.about.image && (
+          <figure class="about-image">
+            <img
+              src={site.about.image}
+              alt=""
+              loading="lazy"
+              width="800"
+              height="500"
+            />
+            <figcaption class="sr-only">{site.businessName} — {site.about.title}</figcaption>
+          </figure>
+        )}
+      </div>
+    </div>
+  </section>
+)}
+
+<style>
+  .about {
+    padding: 5rem 0;
+    background: var(--color-surface);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .section-eyebrow {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: 0.75rem;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .about-title {
+    font-family: var(--font-display), serif;
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    margin: 0 0 1.25rem;
+    line-height: 1.2;
+  }
+
+  .about-body {
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    color: var(--color-muted);
+    margin: 0;
+    max-width: 32rem;
+  }
+
+  .about-image {
+    margin: 0;
+    max-width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 8px 30px color-mix(in srgb, var(--color-text) 12%, transparent);
+  }
+
+  .about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 800 / 500;
+    object-fit: cover;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  @media (min-width: 768px) {
+    .about-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+  }
+</style>

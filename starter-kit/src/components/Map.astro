@@ -1,0 +1,98 @@
+---
+// src/components/Map.astro
+import { site } from '../config/site';
+---
+
+{site.showMap === true && site.map?.embedUrl && (
+  <section class="map-section" aria-labelledby="map-heading">
+    <div class="container">
+      <header class="map-header">
+        <h2 id="map-heading" class="map-title">Visit Us</h2>
+        <address class="map-address">
+          {site.address}
+          <br />
+          <a href={`tel:${site.phone.replace(/[^+\d]/g, '')}`}>{site.phone}</a>
+          <br />
+          <a href={`mailto:${site.email}`}>{site.email}</a>
+        </address>
+      </header>
+
+      <div class="map-embed">
+        <iframe
+          title="Map showing location of {site.businessName}"
+          src={site.map.embedUrl}
+          width="100%"
+          height="400"
+          style="border: 0;"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+)}
+
+<style>
+  .map-section {
+    padding: 5rem 0;
+    background: var(--color-bg);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .map-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .map-title {
+    font-family: var(--font-display), serif;
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    margin: 0 0 1rem;
+    line-height: 1.2;
+  }
+
+  .map-address {
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-muted);
+    margin: 0;
+  }
+
+  .map-address a {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .map-address a:hover {
+    text-decoration: underline;
+  }
+
+  .map-embed {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 4px 16px color-mix(in srgb, var(--color-text) 10%, transparent);
+    border: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent);
+  }
+
+  .map-embed iframe {
+    display: block;
+    width: 100%;
+    height: 400px;
+  }
+
+  @media (max-width: 640px) {
+    .map-embed iframe {
+      height: 320px;
+    }
+  }
+</style>

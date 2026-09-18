@@ -1,0 +1,128 @@
+---
+// src/components/Services.astro
+import { site } from '../config/site';
+---
+
+<section class="services" aria-labelledby="services-heading">
+  <div class="container">
+    <header class="section-header">
+      <span class="section-eyebrow">What We Offer</span>
+      <h2 id="services-heading" class="section-title">Our Services</h2>
+    </header>
+
+    <ul class="services-grid" role="list">
+      {site.services.map((service) => (
+        <li class="service-card">
+          <div class="service-content">
+            <h3 class="service-title">{service.title}</h3>
+            <p class="service-description">{service.description}</p>
+          </div>
+          {service.price && (
+            <p class="service-price">{service.price}</p>
+          )}
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .services {
+    padding: 5rem 0;
+    background: var(--color-bg);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .section-eyebrow {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: 0.75rem;
+  }
+
+  .section-title {
+    font-family: var(--font-display), serif;
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .services-grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .service-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.5rem;
+    background: var(--color-surface);
+    border: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent);
+    border-radius: 0.75rem;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+
+  .service-card:hover {
+    box-shadow: 0 4px 16px color-mix(in srgb, var(--color-text) 10%, transparent);
+    transform: translateY(-2px);
+  }
+
+  .service-content {
+    flex: 1;
+  }
+
+  .service-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+    color: var(--color-text);
+  }
+
+  .service-description {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--color-muted);
+    margin: 0;
+  }
+
+  .service-price {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    margin: 0;
+    padding-top: 0.5rem;
+    border-top: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent);
+  }
+
+  @media (min-width: 640px) {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .services-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

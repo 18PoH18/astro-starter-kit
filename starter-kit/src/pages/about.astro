@@ -1,0 +1,67 @@
+---
+// src/pages/about.astro
+import Base from '../layouts/Base.astro';
+import About from '../components/About.astro';
+import Testimonials from '../components/Testimonials.astro';
+import Map from '../components/Map.astro';
+---
+
+<Base title="About">
+  <div class="page-hero">
+    <div class="container">
+      <span class="page-eyebrow">Our Story</span>
+      <h1 class="page-title">About Cornerstone Coffee Co.</h1>
+      <p class="page-description">
+        Why we roast, why we serve, and why this corner of downtown Portland is home.
+      </p>
+    </div>
+  </div>
+
+  <About />
+  <Testimonials />
+  <Map />
+</Base>
+
+<style>
+  .page-hero {
+    background: var(--color-primary);
+    color: #fff;
+    padding: 5rem 0;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .page-eyebrow {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: 0.75rem;
+  }
+
+  .page-title {
+    font-family: var(--font-display), serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0 0 1rem;
+    line-height: 1.15;
+  }
+
+  .page-description {
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    opacity: 0.85;
+    margin: 0;
+    max-width: 28rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
