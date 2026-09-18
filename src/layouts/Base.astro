@@ -7,6 +7,12 @@ import { site } from '../config/site';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
+// Base URL for OG tags, canonical, og:image, twitter:image, and
+// Plausible data-domain. Set SITE_URL in your hosting env vars
+// (Netlify: Site configuration → Environment variables) to the
+// live URL. Falls back to the known staging URL for the demo.
+const baseUrl = import.meta.env.SITE_URL ?? 'https://cornerstone-coffee.netlify.app';
+
 export interface Props {
   title?: string;
   description?: string;
@@ -18,10 +24,14 @@ const {
   title,
   description = site.description,
   ogImage = '/og-image.png',
-  canonical = Astro.url?.pathname ?? '/',
+  canonical = '/',
 } = Astro.props;
 
 const fullTitle = title ? `${title} — ${site.businessName}` : site.businessName;
+const ogUrl = baseUrl + canonical;
+const ogImageUrl = baseUrl + ogImage;
+const canonicalUrl = baseUrl + canonical;
+const domain = new URL(baseUrl).hostname.replace('www.', '');
 ---
 
 <!doctype html>
@@ -36,8 +46,8 @@ const fullTitle = title ? `${title} — ${site.businessName}` : site.businessNam
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content={Astro.url?.origin + canonical} />
-    <meta property="og:image" content={Astro.url?.origin + ogImage} />
+    <meta property="og:url" content={ogUrl} />
+    <meta property="og:image" content={ogImageUrl} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:locale" content="en_US" />
@@ -46,13 +56,13 @@ const fullTitle = title ? `${title} — ${site.businessName}` : site.businessNam
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={Astro.url?.origin + ogImage} />
+    <meta name="twitter:image" content={ogImageUrl} />
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
     <!-- Canonical -->
-    <link rel="canonical" href={Astro.url?.origin + canonical} />
+    <link rel="canonical" href={canonicalUrl} />
 
     <!-- Page title -->
     <title>{fullTitle}</title>
@@ -105,7 +115,7 @@ const fullTitle = title ? `${title} — ${site.businessName}` : site.businessNam
     {site.analytics.plausible && (
       <script
         defer
-        data-domain={Astro.url?.hostname?.replace('www.', '') ?? 'example.com'}
+        data-domain={domain}
         src={site.analytics.plausible}
       />
     )}
