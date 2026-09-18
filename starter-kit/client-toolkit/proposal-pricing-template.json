@@ -1,0 +1,612 @@
+{
+  "page": {
+    "size": [
+      215.9,
+      279.4
+    ],
+    "margins_mm": [
+      25.4,
+      25.4,
+      25.4,
+      25.4
+    ]
+  },
+  "header": "Website Proposal & Pricing",
+  "footer_page_numbers": true,
+  "styles": [
+    {
+      "name": "DocTitle",
+      "font": "Calibri",
+      "size_pt": 11,
+      "color": "3B2314"
+    },
+    {
+      "name": "DocSubtitle",
+      "font": "Calibri",
+      "size_pt": 11,
+      "color": "6B5B4E"
+    },
+    {
+      "name": "SectionHeading",
+      "font": "Calibri",
+      "size_pt": 11,
+      "color": "3B2314"
+    },
+    {
+      "name": "ItemHeading",
+      "font": "Calibri",
+      "size_pt": 11,
+      "color": "1A120B"
+    },
+    {
+      "name": "BodyText",
+      "font": "Calibri",
+      "size_pt": 11,
+      "color": "1A120B"
+    },
+    {
+      "name": "NoteText",
+      "font": "Calibri",
+      "size_pt": 11,
+      "color": "6B5B4E"
+    },
+    {
+      "name": "PitchText",
+      "font": "Calibri",
+      "size_pt": 11,
+      "color": "1A120B"
+    }
+  ],
+  "blocks": [
+    {
+      "level": 1,
+      "style": "DocTitle",
+      "type": "heading",
+      "text": "Website Proposal & Pricing"
+    },
+    {
+      "style": "DocSubtitle",
+      "type": "paragraph",
+      "text": "[Client business name] — Prepared by [Your name / company]"
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Date: [Date]"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": ""
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "This proposal outlines a custom website built specifically for [Client business name] — not a template, not a builder subscription, not a monthly rental. You own the site outright, we handle everything, and you get a human being who answers the phone when something needs attention."
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "1. The Problem With Website Builders"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "Most small business owners we talk to already tried a website builder. Here's what we hear, over and over:"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "'I pay $30–$50/month and still can't get the site to look the way I want.'",
+        "'Every time I try to make a change I break something else.'",
+        "'The template looks like every other business in my category — I blend in instead of standing out.'",
+        "'I don't actually own anything. If I stop paying, my site disappears.'",
+        "'When something goes wrong, there's a chatbot or a forum — nobody who knows my business.'"
+      ]
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": ""
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": ""
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "The real cost of a builder subscription"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "At $97/month (a typical builder price), over three years you pay:"
+    },
+    {
+      "type": "table",
+      "header": [
+        "Period",
+        "Total Cost",
+        "What You Actually Own"
+      ],
+      "rows": [
+        [
+          "1 year",
+          "$1,164",
+          "Nothing — access ends when you stop paying"
+        ],
+        [
+          "3 years",
+          "$3,492",
+          "Nothing — access ends when you stop paying"
+        ],
+        [
+          "5 years",
+          "$5,820",
+          "Nothing — access ends when you stop paying"
+        ],
+        [
+          "10 years",
+          "$11,640",
+          "Nothing — access ends when you stop paying"
+        ]
+      ]
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "And at the end of any of those periods, you have no site, no content portability, no design equity, and no one to call. The builder owns your domain, your content, and your customer relationships."
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "2. What You Get With Us"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "A hand-built site, custom-designed for your business, that you own outright. No subscriptions. No templates pretending to be custom. No monthly rental."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "The site itself"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "A fast, mobile-first website built specifically for your business — not a template you're stuck with",
+        "Professional design that reflects your brand, not a generic layout shared with thousands of other businesses",
+        "Local SEO built in from day one — your site is structured to show up in local search and Google Maps",
+        "Contact form that actually works and delivers messages to your inbox",
+        "Google Business Profile integration so you appear in local search results and Maps",
+        "No ongoing platform fees — the site is yours, forever, with no monthly rental to a builder"
+      ]
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": ""
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Ongoing support"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "A real person who knows your business and answers your calls and emails",
+        "Regular updates, security checks, and uptime monitoring so your site stays live and healthy",
+        "Content edits when you need them — new hours, a new service, a fresh photo",
+        "No surprises — what we quote is what you pay"
+      ]
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": ""
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "3. Our Pricing"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "We lead with the ongoing relationship — because that's the part that matters most. A website isn't a one-time purchase; it's a living part of your business that needs care. The build fee is secondary to the long-term plan."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Care Plans (recurring — we recommend this as your primary investment)"
+    },
+    {
+      "type": "table",
+      "header": [
+        "",
+        "Care Plan",
+        "Care Plan+"
+      ],
+      "rows": [
+        [
+          "Monthly price",
+          "$60/month",
+          "$100/month"
+        ],
+        [
+          "Best for",
+          "Simple, stable sites",
+          "Active businesses with regular updates"
+        ],
+        [
+          "Hosting & domain management",
+          "Included",
+          "Included"
+        ],
+        [
+          "Uptime & security monitoring",
+          "Included",
+          "Included"
+        ],
+        [
+          "Domain renewal reminders",
+          "Included",
+          "Included"
+        ],
+        [
+          "Email support",
+          "Included",
+          "Included"
+        ],
+        [
+          "Content edits per month",
+          "1 edit",
+          "2 edits"
+        ],
+        [
+          "Local SEO check (monthly)",
+          "—",
+          "Included: Google Business Profile updates, citation consistency check"
+        ],
+        [
+          "Monthly report",
+          "—",
+          "Included: uptime + analytics summary"
+        ]
+      ]
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": ""
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Care Plan edits: Add a new photo, update hours, change a service description, fix a typo, swap a testimonial — small content changes that keep your site current. Each edit is one change; complex changes (new pages, new features) are scoped separately."
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Care Plan+ local SEO check: We review your Google Business Profile for accuracy, check that your business name, address, and phone are consistent across the web, and send you a brief report. This directly improves how you show up in local search."
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "One-Time Build Fees"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "The build fee pays for the initial creation of your site. It's a one-time cost — you own the result. After that, the Care Plan handles everything ongoing."
+    },
+    {
+      "type": "table",
+      "header": [
+        "Tier",
+        "Price",
+        "What's Included"
+      ],
+      "rows": [
+        [
+          "Starter",
+          "$1,000+",
+          "5 pages (home, about, services, contact, plus one), contact form, mobile responsive, local SEO basics, professional design, 2 revision rounds"
+        ],
+        [
+          "Standard (most popular)",
+          "$2,000",
+          "Everything in Starter, plus: gallery section, testimonials section, booking embed (Calendly), Google Maps embed, Google Business Profile integration, analytics setup, handover documents, 2 revision rounds"
+        ],
+        [
+          "Custom",
+          "Quoted",
+          "Anything beyond Standard — additional pages, custom features, integrations, content strategy, or a more complex design. We scope these individually."
+        ]
+      ]
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": ""
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "The Care Plan is your primary investment. The build fee is a one-time cost to create the site. Together, even at the Standard tier ($2,000 build + $60/month Care Plan), over three years you've spent $4,160 — and you own a professional, hand-built site with ongoing support. Compare that to $3,492 for a builder subscription over three years and you own nothing, and you start to see why the math favors ownership."
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "4. What's Not Included (and why)"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "Honest scope boundaries prevent surprises. Here's what's outside the build and how we handle it."
+    },
+    {
+      "type": "table",
+      "header": [
+        "Item",
+        "Included?",
+        "How it works"
+      ],
+      "rows": [
+        [
+          "Professional photography",
+          "No — separate",
+          "We recommend a local photographer ($300–$800 for a half-day shoot). We can refer you or guide you. Stock photos are fine as placeholders."
+        ],
+        [
+          "Copywriting from scratch",
+          "No — separate",
+          "We write from what you give us. If you need full copywriting (interview-based writing of all site text), that's a separate project."
+        ],
+        [
+          "Logo design",
+          "No — separate",
+          "We can refer you to a designer. A good logo is worth the investment and lasts for years."
+        ],
+        [
+          "Email marketing / newsletters",
+          "No — separate",
+          "We can recommend tools (Mailchimp, ConvertKit) and help with basic integration, but ongoing email marketing is a different service."
+        ],
+        [
+          "Advanced SEO campaigns",
+          "No — separate",
+          "We build local SEO fundamentals into every site. Broader SEO campaigns (national, competitive keywords) are a separate engagement."
+        ],
+        [
+          "E-commerce / online sales",
+          "No — separate",
+          "Selling products online is a different project from a local business brochure site. We can refer you or scope it separately."
+        ],
+        [
+          "Content you don't provide",
+          "No — separate",
+          "The build requires the content checklist to be complete. Incomplete content delays launch and may require a separate content-gathering engagement."
+        ]
+      ]
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "5. How We Work"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "A clear process keeps the build on time and on budget. Here's what to expect."
+    },
+    {
+      "type": "table",
+      "header": [
+        "Phase",
+        "What Happens",
+        "How Long"
+      ],
+      "rows": [
+        [
+          "1. Kickoff",
+          "We send the Content Checklist. You gather and submit your materials. We confirm the scope and pricing in writing.",
+          "1–2 days"
+        ],
+        [
+          "2. Build",
+          "We build your site on a private staging URL. You can't see it yet — it's not live to the public.",
+          "2–4 days"
+        ],
+        [
+          "3. Review",
+          "We send you the staging link. You review and send feedback. We make up to 2 rounds of revisions.",
+          "1–3 days"
+        ],
+        [
+          "4. Launch",
+          "When you're happy, we connect your domain, verify SSL, and make the site live. You get handoff documents explaining everything.",
+          "1 day"
+        ],
+        [
+          "5. Ongoing",
+          "You're on a Care Plan. We handle updates, monitoring, and support. You focus on your business.",
+          "Ongoing"
+        ]
+      ]
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "6. Investment Summary"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "Here's the full picture in one place."
+    },
+    {
+      "type": "table",
+      "header": [
+        "",
+        "Starter",
+        "Standard",
+        "Custom"
+      ],
+      "rows": [
+        [
+          "One-time build fee",
+          "$1,000+",
+          "$2,000",
+          "Quoted"
+        ],
+        [
+          "Care Plan (monthly)",
+          "$60/mo",
+          "$60/mo",
+          "$60/mo"
+        ],
+        [
+          "Care Plan+ (monthly)",
+          "$100/mo",
+          "$100/mo",
+          "$100/mo"
+        ],
+        [
+          "Ongoing platform fees",
+          "None",
+          "None",
+          "None"
+        ],
+        [
+          "Total first year (Standard + Care Plan)",
+          "$2,720",
+          "$3,200",
+          "—"
+        ],
+        [
+          "Total over 3 years (Standard + Care Plan)",
+          "$4,160",
+          "$5,600",
+          "—"
+        ],
+        [
+          "Total over 3 years (builder @ $97/mo)",
+          "$3,492 — and you own nothing",
+          "$3,492 — and you own nothing",
+          "$3,492 — and you own nothing"
+        ]
+      ]
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": ""
+    },
+    {
+      "style": "PitchText",
+      "type": "paragraph",
+      "text": "The comparison isn't just about total cost — it's about what you own at the end. With us, you own a professional, hand-built website that reflects your business. With a builder, you own a login that stops working the moment you stop paying."
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "7. Next Steps"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "Ready to move forward? Here's how we start."
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "1. Review this proposal and let us know if you have questions — we're happy to talk through any part of it.",
+        "2. Choose your build tier (Starter, Standard, or Custom) and your Care Plan option (Care Plan or Care Plan+). We'll confirm the scope in a written agreement.",
+        "3. We send the Content Checklist — start gathering your materials. The more complete your content, the faster we launch.",
+        "4. We send a project agreement and invoice for the build fee (50% to start, 50% on completion — or 100% up front if you prefer).",
+        "5. Once the agreement is signed and the deposit is received, we schedule the kickoff and begin the build."
+      ]
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": ""
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "Questions about pricing or scope? Reach out before signing — we'd rather answer everything upfront than have you wonder later."
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": ""
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "[Your name]"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "[Your title / company]"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "[Phone]"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "[Email]"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "[Website / portfolio]"
+    }
+  ]
+}

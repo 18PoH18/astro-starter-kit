@@ -1,0 +1,15 @@
+# Generated outputs — exclude from version control.
+# Regenerate from *.json specs with:
+#   python <docx-skill>/scripts/docx_create.py <spec>.json <out>.docx
+#   soffice --headless --convert-to pdf --outdir pdf <out>.docx
+
+# Large derived artifacts (treat as build output):
+pdf/
+
+# DOCX files: committed once as a convenience snapshot.
+# To stop tracking future changes, leave them committed but do NOT
+# re-add after regenerating — the .gitignore above would need to
+# cover *.docx if you want them fully untracked going forward.
+# If you ever want to untrack them entirely:
+#   git rm --cached client-toolkit/*.docx
+#   git commit -m "Stop tracking DOCX outputs (regenerate from JSON specs)"

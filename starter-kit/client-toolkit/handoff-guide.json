@@ -1,0 +1,741 @@
+{
+  "page": {
+    "size": [
+      215.9,
+      279.4
+    ],
+    "margins_mm": [
+      25.4,
+      25.4,
+      25.4,
+      25.4
+    ]
+  },
+  "header": "Website Handoff Guide",
+  "footer_page_numbers": true,
+  "styles": [
+    {
+      "name": "DocTitle",
+      "font": "Calibri",
+      "size_pt": 11,
+      "color": "3B2314"
+    },
+    {
+      "name": "DocSubtitle",
+      "font": "Calibri",
+      "size_pt": 11,
+      "color": "6B5B4E"
+    },
+    {
+      "name": "SectionHeading",
+      "font": "Calibri",
+      "size_pt": 11,
+      "color": "3B2314"
+    },
+    {
+      "name": "ItemHeading",
+      "font": "Calibri",
+      "size_pt": 11,
+      "color": "1A120B"
+    },
+    {
+      "name": "BodyText",
+      "font": "Calibri",
+      "size_pt": 11,
+      "color": "1A120B"
+    },
+    {
+      "name": "NoteText",
+      "font": "Calibri",
+      "size_pt": 11,
+      "color": "6B5B4E"
+    }
+  ],
+  "blocks": [
+    {
+      "level": 1,
+      "style": "DocTitle",
+      "type": "heading",
+      "text": "Website Handoff Guide"
+    },
+    {
+      "style": "DocSubtitle",
+      "type": "paragraph",
+      "text": "[Client business name] — Your website, explained"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "This guide explains everything about your new website: how to access it, how to make changes, how to request support, and what you own. Keep it handy — it's your reference for the life of the site."
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "1. What You Own"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "Let's start with the most important thing: what you own outright, and what that means."
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Your website files — the HTML, CSS, and content that make up your site. These are yours. No one can take them away, no one can hold them hostage, and no one can charge you to keep having them.",
+        "Your domain name — the address people type to reach your site (e.g. cornerstonecoffee.co). This is registered in YOUR name. Make sure you know your registrar login — if you ever need to move your site or change providers, this is how you keep control.",
+        "Your content — all the text, photos, testimonials, and information on the site. It belongs to you. If you ever leave us, you take it with you.",
+        "Your analytics data — if we set up analytics, that data belongs to you. You can access it anytime."
+      ]
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "What you do NOT own: the starter kit framework that this site was built from. That's our reusable IP — the code structure, the component patterns, the build system. You don't need it, and you wouldn't want it. What you have is your finished, working website."
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": ""
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "This is different from a website builder. With a builder, you don't own anything — you're renting access to a platform. If you stop paying, your site disappears. With us, your site is a set of files that live on a hosting provider. You own the files. The hosting provider just stores them, like a warehouse stores inventory you own."
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "2. How to Access Your Site"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "Your website is made of files stored on a hosting provider. Here's how to get to everything."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Viewing the live site"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Your live website is at: [your domain, e.g. https://cornerstonecoffee.co]",
+        "Anyone with the link can see it. You don't need a login to view it.",
+        "Changes you make (with our help or through a Care Plan edit) appear on the live site shortly after they're made — usually within a few minutes."
+      ]
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Editing the site yourself"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "Your site is built from a set of files — mostly text files that contain your content. This means you CAN edit it yourself if you want to, but you don't HAVE to."
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "The main file containing all your site content is called site.ts (or a similar config file). It's a text file with your business name, description, services, hours, contact info, photos, and settings written in a format that's readable even if you've never seen it before.",
+        "If you know how to edit a text file and push to GitHub, you can make changes directly. We'll show you how if you want.",
+        "If you'd rather not touch the code, that's perfectly fine — that's what the Care Plan is for. You tell us what you want changed, we make it, you review it."
+      ]
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "We'll never lock you into editing a proprietary visual builder. Your site content lives in plain text files — that's intentional, so you're never trapped."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Where your files live"
+    },
+    {
+      "type": "table",
+      "header": [
+        "Thing",
+        "Where it lives",
+        "How to access",
+        "Who owns it"
+      ],
+      "rows": [
+        [
+          "Website files",
+          "Netlify hosting",
+          "Your Netlify account (we give you access)",
+          "You"
+        ],
+        [
+          "Source code",
+          "GitHub",
+          "Your GitHub account (or the account you've given us access to)",
+          "You"
+        ],
+        [
+          "Domain name",
+          "Your domain registrar (Cloudflare, Namecheap, etc.)",
+          "Your registrar login",
+          "You"
+        ],
+        [
+          "Contact form submissions",
+          "Formspree",
+          "Your Formspree account login",
+          "You"
+        ],
+        [
+          "Booking",
+          "Calendly (if enabled)",
+          "Your Calendly account login",
+          "You"
+        ],
+        [
+          "Analytics",
+          "Plausible or Google Analytics",
+          "Your analytics account login",
+          "You"
+        ],
+        [
+          "Photos",
+          "Our project Google Drive folder (or wherever you sent them)",
+          "The Drive link we gave you",
+          "You"
+        ]
+      ]
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "3. Your Accounts"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "To keep you in control, we set up these services in YOUR accounts, not ours. Here's where to find each one and what you use it for."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Netlify (your hosting)"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "What it is: The service that stores your website files and makes them available on the internet. Think of it like the land your house sits on.",
+        "Your login: [Netlify account email and access details]",
+        "What you do there: View your site, see deployment history, add or remove team members (including us), connect or change your domain, manage environment settings.",
+        "What you DON'T need to do: Nothing on a day-to-day basis. We handle deployments, SSL, and domain connection. You only log in if you want to see something or make a change to access."
+      ]
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Important: You own this account. If you ever want to move your site to a different host, you can download all your files from Netlify and take them anywhere. We can't hold your site hostage because we don't own the account."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "GitHub (your source code)"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "What it is: Where the source files for your website are stored. This is your copy of the code — the text files that contain all your content and settings.",
+        "Your login: [GitHub account details, or the org account you've set up]",
+        "What you do there: View your files, see the history of changes, add or remove collaborators (including us).",
+        "What you DON'T need to do: Nothing day-to-day. We handle the technical side. You only log in if you want to see your files or manage access."
+      ]
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Formspree (your contact form)"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "What it is: The service that receives messages from your contact form and sends them to your email.",
+        "Your login: [Formspree account email and access details]",
+        "What you do there: See submissions, set up email notifications, configure spam filtering, change where submissions are sent.",
+        "What you DON'T need to do: Nothing unless you want to change how submissions are handled."
+      ]
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Calendly (your booking, if enabled)"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "What it is: The service that handles appointment booking on your site.",
+        "Your login: [Calendly account email and access details]",
+        "What you do there: Set your availability, manage event types, view bookings.",
+        "Only if you enabled booking on your site. If you don't use booking, you don't have this."
+      ]
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Your domain registrar"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "What it is: The service where your domain name is registered. This is the most important account to keep track of.",
+        "Your login: [Registrar name and access details — Cloudflare, Namecheap, etc.]",
+        "What you do there: Renew your domain (we remind you before it expires), update DNS records if needed, transfer the domain if you ever want to.",
+        "Critical: Never let anyone register your domain in their name. If you forget who registered it, or if a previous developer registered it in their name, contact us and we'll help you get it transferred to your name."
+      ]
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "4. How to Request Changes"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "Making changes to your site should be easy, not a project. Here's how it works."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Care Plan edits (included in your monthly plan)"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Small content changes are included in your Care Plan — up to [1 or 2] per month depending on your plan.",
+        "Examples of Care Plan edits: Update hours, change a phone number or email, swap a photo, add or remove a testimonial, fix a typo, update a service description, change a link.",
+        "How to request: Send us a message (email, phone, or the method we've agreed on) describing what you want changed. Be as specific as you can — 'Change the hours on the contact page from 7-6 to 8-5' is perfect. 'Make it look better' is not actionable.",
+        "How long it takes: We aim to complete Care Plan edits within 1-2 business days.",
+        "Roll-over: Unused edits do not roll over to the next month. They reset. This keeps the pricing simple and predictable."
+      ]
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Changes outside the Care Plan"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Larger changes — new pages, new sections, new features, complete redesigns, adding integrations — are scoped and billed separately.",
+        "How to request: Tell us what you want and why. We'll look at it, estimate the scope and cost, and give you a quote before we start. You approve the quote before anything is done.",
+        "No surprises: Nothing is changed without your approval and a clear cost. If a change turns out to be larger than expected, we tell you before proceeding."
+      ]
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "What to include in a change request"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "What page or section the change is on",
+        "What you want changed (be specific — include the current text if you're changing text)",
+        "What you want it to say or look like instead",
+        "Any photos, links, or other materials needed for the change",
+        "Whether you have a deadline"
+      ]
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "A good change request: 'On the Services page, please change the price of Espresso Drinks from Starting at $4.50 to Starting at $5.00. The new price is effective June 1st.'"
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "A vague change request: 'Update the services page, it's not reflecting our current offerings.' (We'll come back and ask for specifics — this wastes your time and ours.)"
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "5. Support & Communication"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "Here's how we handle support, what to expect, and when to call."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "What's covered"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Site is down or not loading — we investigate immediately",
+        "Contact form stopped working — we investigate immediately",
+        "Site looks broken on a specific device or browser — we look at it and fix it",
+        "Security concern or suspicious activity — we investigate immediately",
+        "Content edits per your Care Plan allowance — we complete them within 1-2 business days",
+        "Questions about how to do something on your site — we answer them"
+      ]
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "What's not covered"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Issues with third-party services (Formspree, Calendly, your domain registrar, your email provider) — we can help troubleshoot, but those are separate services with their own support",
+        "Computer or internet problems on your end — we can guide you but can't fix your hardware or connection",
+        "Changes you haven't requested — we don't make changes without asking first",
+        "Changes outside your Care Plan allowance without a quote and approval"
+      ]
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "How to reach us"
+    },
+    {
+      "type": "table",
+      "header": [
+        "Method",
+        "Response time",
+        "Best for"
+      ],
+      "rows": [
+        [
+          "Email: [your contact email]",
+          "Within 1 business day",
+          "Non-urgent changes, questions, content requests"
+        ],
+        [
+          "Phone: [your phone]",
+          "During business hours",
+          "Urgent issues — site down, form broken, something wrong"
+        ],
+        [
+          "Scheduled call",
+          "By appointment",
+          "Larger changes, scope discussions, quarterly check-ins"
+        ]
+      ]
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "6. Maintenance & Upkeep"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "A healthy website needs occasional attention. Here's what we handle and what you handle."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "What we handle (Care Plan)"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Hosting uptime monitoring — we watch your site 24/7 and are alerted if it goes down",
+        "Security updates — the underlying software stays current so your site isn't vulnerable",
+        "SSL certificate — your site stays on HTTPS (the secure connection) automatically; we monitor it",
+        "Domain renewal reminders — we remind you before your domain expires so you never lose it",
+        "Broken link checks — we periodically check for links that go nowhere and fix or remove them",
+        "Backup monitoring — we confirm your site is being backed up according to the hosting provider's schedule"
+      ]
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "What you handle"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Domain renewal — we remind you, but you pay the registrar directly. Keep your registrar login safe and current.",
+        "Keeping your contact info current — if your phone, email, or address changes, tell us so we can update the site",
+        "Keeping your Google Business Profile updated — hours, photos, posts. This is one of the most important things for local visibility.",
+        "Reviewing your analytics occasionally — even a quick monthly glance tells you what's working",
+        "Telling us when you want changes — we don't read your mind; tell us what you want and we'll make it happen"
+      ]
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Recommended monthly check-in (5 minutes)"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Open your live site on your phone — does everything look right?",
+        "Open it on a computer — does everything look right?",
+        "Submit a test message through your contact form — did you receive it?",
+        "Check your Google Business Profile — are your hours and info still correct?",
+        "If anything looks wrong, contact us. Otherwise, you're done for the month."
+      ]
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "7. What Happens If You Ever Want to Leave"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "This is the question every business owner should ask before hiring anyone for their website. Here's our answer."
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "You own your site files. If you want to move to a different hosting provider, you can download your files from Netlify and take them anywhere. We can help you do this if you want.",
+        "You own your domain. It's registered in your name. You can point it wherever you want, whenever you want.",
+        "You own your content. All your text, photos, and information are yours. We don't claim any rights to it.",
+        "You can end the Care Plan at any time. We'll give you 30 days' notice and make sure everything is in good shape before we stop. We won't lock you in.",
+        "We'll provide a final report showing the state of your site, where everything lives, and what you need to know to manage it on your own or hand it to someone else.",
+        "We'll transfer access to any accounts we manage on your behalf (Netlify, GitHub, etc.) so you have full control.",
+        "There is no penalty for leaving. No long-term contract. No buyout fee. No 'you must continue paying to keep your site' clause. Because you own the site."
+      ]
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "The reason there's no lock-in: we don't want clients who stay because they have to. We want clients who stay because we're doing a good job and they trust us. If we stop doing a good job, you should leave — and we'll make sure you can do it easily."
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "8. Quick Reference"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "Keep this page handy — it has the key information in one place."
+    },
+    {
+      "type": "table",
+      "header": [
+        "Thing",
+        "Detail"
+      ],
+      "rows": [
+        [
+          "Your live website",
+          "[your domain]"
+        ],
+        [
+          "Your staging URL (during builds/reviews)",
+          "[staging URL — provided during build]"
+        ],
+        [
+          "Hosting provider",
+          "Netlify — login: [details]"
+        ],
+        [
+          "Source code",
+          "GitHub — login: [details]"
+        ],
+        [
+          "Domain registrar",
+          "[Cloudflare / Namecheap / other] — login: [details]"
+        ],
+        [
+          "Contact form",
+          "Formspree — login: [details] — submissions go to: [email]"
+        ],
+        [
+          "Booking",
+          "Calendly — login: [details] (if enabled)"
+        ],
+        [
+          "Analytics",
+          "[Plausible / Google Analytics] — login: [details]"
+        ],
+        [
+          "Content folder (photos, files)",
+          "[Google Drive link]"
+        ],
+        [
+          "Your Care Plan",
+          "[Care Plan / Care Plan+] — $[60/100]/month"
+        ],
+        [
+          "Edits included per month",
+          "[1 / 2]"
+        ],
+        [
+          "Support email",
+          "[your support email]"
+        ],
+        [
+          "Support phone",
+          "[your support phone]"
+        ],
+        [
+          "Your project contact",
+          "[Your name and contact info]"
+        ]
+      ]
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "9. Glossary"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "A few terms you might hear — explained simply."
+    },
+    {
+      "type": "table",
+      "header": [
+        "Term",
+        "What it means"
+      ],
+      "rows": [
+        [
+          "Domain",
+          "Your address on the web — the thing people type to find you (e.g. yourbusiness.com). You rent it yearly from a registrar. You own the registration."
+        ],
+        [
+          "Hosting",
+          "A service that stores your website files and makes them available on the internet. Like a warehouse for your site."
+        ],
+        [
+          "SSL",
+          "The little lock icon in the browser bar. It means your site uses a secure connection. It's free with most hosts now and required for Google to trust your site."
+        ],
+        [
+          "DNS",
+          "The system that translates your domain name (yourbusiness.com) into the address of the server where your site lives. You manage this with your domain registrar."
+        ],
+        [
+          "SEO",
+          "Search Engine Optimization — the practice of making your site show up in search results. We build local SEO into every site. Broader SEO is a separate service."
+        ],
+        [
+          "Staging site",
+          "A private version of your site where we build and test changes before they go live. Only people with the link can see it. It looks and works exactly like the live site."
+        ],
+        [
+          "Deploy",
+          "The act of sending your updated site files to the hosting provider so the changes go live. We do this automatically — you don't need to do anything."
+        ],
+        [
+          "Care Plan",
+          "Our monthly retainer service — hosting management, monitoring, support, and content edits. The ongoing relationship that keeps your site healthy."
+        ],
+        [
+          "Contact form",
+          "The form on your contact page that lets people send you messages. It's powered by Formspree — a service that receives the messages and sends them to your email."
+        ],
+        [
+          "Google Business Profile",
+          "Your business listing on Google — what shows up in Google Maps and local search results. You claim and verify it. It's one of the most important things for local visibility."
+        ],
+        [
+          "Analytics",
+          "A tool that tells you how many people visit your site and what they do. Plausible is simple and privacy-friendly. Google Analytics is more detailed but more complex. Both are optional."
+        ]
+      ]
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "Questions?"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "This guide is meant to be a reference, not a test. If anything here is unclear, or if something about your site doesn't match what's described here, contact us and we'll sort it out."
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "The most important thing to remember: you own this site. No one can take it away. If you ever have a concern about control, access, or ownership, bring it up — we'll address it directly."
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": ""
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "[Your name]"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "[Your title / company]"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "[Contact info]"
+    }
+  ]
+}

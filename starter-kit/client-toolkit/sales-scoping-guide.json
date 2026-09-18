@@ -1,0 +1,769 @@
+{
+  "page": {
+    "size": [
+      215.9,
+      279.4
+    ],
+    "margins_mm": [
+      25.4,
+      25.4,
+      25.4,
+      25.4
+    ]
+  },
+  "header": "Sales & Scoping Guide — Local Business Web Service",
+  "footer_page_numbers": true,
+  "styles": [
+    {
+      "name": "DocTitle",
+      "font": "Calibri",
+      "size_pt": 11,
+      "color": "3B2314"
+    },
+    {
+      "name": "DocSubtitle",
+      "font": "Calibri",
+      "size_pt": 11,
+      "color": "6B5B4E"
+    },
+    {
+      "name": "SectionHeading",
+      "font": "Calibri",
+      "size_pt": 11,
+      "color": "3B2314"
+    },
+    {
+      "name": "SubHeading",
+      "font": "Calibri",
+      "size_pt": 11,
+      "color": "1A120B"
+    },
+    {
+      "name": "BodyText",
+      "font": "Calibri",
+      "size_pt": 11,
+      "color": "1A120B"
+    },
+    {
+      "name": "PitchText",
+      "font": "Calibri",
+      "size_pt": 11,
+      "color": "1A120B"
+    },
+    {
+      "name": "NoteText",
+      "font": "Calibri",
+      "size_pt": 11,
+      "color": "6B5B4E"
+    }
+  ],
+  "blocks": [
+    {
+      "level": 1,
+      "style": "DocTitle",
+      "type": "heading",
+      "text": "Sales & Scoping Guide"
+    },
+    {
+      "style": "DocSubtitle",
+      "type": "paragraph",
+      "text": "Local Business Web Service — Internal Reference"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "This guide is for you — the person selling and scoping websites. It covers the retainer math, the ownership pitch, how to scope a project, and how to handle common prospect objections. Keep it close during sales conversations."
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "1. The Business Model (in one paragraph)"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "We build custom, hand-coded websites for local businesses using a reusable config-driven starter kit. Each client gets a fully custom site — different content, different design, different structure — built quickly from the same base. The site is theirs to own, hosted on a free-tier platform with no ongoing platform fees. Our revenue comes from a one-time build fee plus a monthly Care Plan retainer that handles hosting management, monitoring, support, and content edits. The retainer is the point — it's predictable recurring revenue, and it's what keeps the client's site healthy over time."
+    },
+    {
+      "style": "PitchText",
+      "type": "paragraph",
+      "text": "The pitch is simple: you own your site, we care for it, and you pay less over time than a builder subscription while actually owning something. That's the whole model. Everything else is details."
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "2. Pricing Reference"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "Lock these numbers in. Don't discount. Don't compare to builders on price — compare on ownership."
+    },
+    {
+      "level": 3,
+      "style": "SubHeading",
+      "type": "heading",
+      "text": "Monthly retainers (LEAD WITH THESE)"
+    },
+    {
+      "type": "table",
+      "header": [
+        "Tier",
+        "Price",
+        "Includes"
+      ],
+      "rows": [
+        [
+          "Care Plan",
+          "$60/month",
+          "Hosting/domain management, uptime + security monitoring, renewal reminders, email support, up to 1 content edit/month"
+        ],
+        [
+          "Care Plan+",
+          "$100/month",
+          "Above + up to 2 edits/month, light local SEO check (Google Business Profile updates, citation consistency), monthly uptime/analytics report"
+        ]
+      ]
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": ""
+    },
+    {
+      "style": "PitchText",
+      "type": "paragraph",
+      "text": "The anchor math: 20 retained clients at $60/month = $1,200/month recurring. At $100/month = $2,000/month recurring. Before any new builds in a given month. This is the number to build the business around."
+    },
+    {
+      "level": 3,
+      "style": "SubHeading",
+      "type": "heading",
+      "text": "One-time build fees"
+    },
+    {
+      "type": "table",
+      "header": [
+        "Tier",
+        "Price",
+        "What's included"
+      ],
+      "rows": [
+        [
+          "Starter",
+          "$1,000+",
+          "5 pages (home, about, services, contact, +1), contact form, mobile responsive, local SEO, professional design, 2 revision rounds"
+        ],
+        [
+          "Standard",
+          "$2,000",
+          "Everything in Starter + gallery, testimonials, booking embed (Calendly), Google Maps embed, Google Business Profile integration, analytics setup, handoff docs, 2 revision rounds"
+        ],
+        [
+          "Custom",
+          "Quoted",
+          "Anything beyond Standard: additional pages, custom features, integrations, content strategy, complex design. Scope individually."
+        ]
+      ]
+    },
+    {
+      "level": 3,
+      "style": "SubHeading",
+      "type": "heading",
+      "text": "Why we lead with the retainer"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "The retainer is the predictable part. The build fee is one-time and varies by project. If you lead with the build fee, you're negotiating a one-time number. If you lead with the Care Plan, you're selling an ongoing relationship — which is what the client actually needs.",
+        "The retainer is what makes the business sustainable. A one-time build business is feast-or-famine. A retainer business has a baseline.",
+        "The retainer is what makes the site actually get cared for. Without an ongoing relationship, the site gets built, launched, and abandoned. That's not what we sell."
+      ]
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "3. The Ownership Pitch (memorize this)"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "This is the core pitch. Say it in your own words, but hit these points every time."
+    },
+    {
+      "level": 3,
+      "style": "SubHeading",
+      "type": "heading",
+      "text": "The builder problem"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Most small business owners already tried a website builder. They're frustrated. They're paying $30–$100/month and still can't get the site to look or work the way they want.",
+        "They don't realize they don't actually own anything. If they stop paying, their site disappears. Their content is trapped in a platform. Their domain may be locked in.",
+        "They think they're renting a website. What they're actually renting is a cage — a proprietary system that holds their content hostage and charges them forever for access to their own business."
+      ]
+    },
+    {
+      "level": 3,
+      "style": "SubHeading",
+      "type": "heading",
+      "text": "What ownership means"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "You own the site files. They live on a hosting provider, but they're yours — like files on your computer. You can move them, copy them, hand them to someone else.",
+        "You own your domain. It's registered in your name. You control where it points. No one can hold it hostage.",
+        "You own your content. Every word, every photo, every testimonial. It belongs to your business, not to a platform.",
+        "You have a human being who knows your business and answers the phone. Not a chatbot. Not a forum. A person.",
+        "The site is built from plain text files — not a proprietary visual builder. You're never trapped in a system you can't escape."
+      ]
+    },
+    {
+      "level": 3,
+      "style": "SubHeading",
+      "type": "heading",
+      "text": "The comparison that lands"
+    },
+    {
+      "style": "PitchText",
+      "type": "paragraph",
+      "text": "Own your site. $97/month builder subscriptions cost $3,492–$28,800 over three years and you own nothing. With us you own the site outright, get a hand-built design, local SEO, and a human who answers the phone."
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": ""
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Key insight: this pitch works because it's true. The numbers are real. The ownership is real. The frustration with builders is real and widely shared. You're not selling a feature — you're selling a better relationship with your own business's online presence."
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "4. Scoping a Project"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "Scope before you quote. A bad scope leads to a bad price, which leads to an unhappy client, which leads toScope creep, which leads to you working for less than you should. Don't do any of that."
+    },
+    {
+      "level": 3,
+      "style": "SubHeading",
+      "type": "heading",
+      "text": "The scoping conversation"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Start with the business, not the website. Ask: what does this business do? Who are their customers? What do they want the website to do for them? What's currently working or not working?",
+        "Ask about their current online presence: Do they have a site now? What do they like/dislike about it? Do they have a Google Business Profile? Social media? Online reviews?",
+        "Ask about their goals: More foot traffic? More phone calls? Online bookings? A better first impression? Build trust with new customers?",
+        "Ask about content: Do they have photos? Logos? Testimonials? Do they know their hours, services, and pricing clearly? This tells you how much content work is involved.",
+        "Ask about timeline: When do they want to launch? Is there an event, season, or deadline driving it?",
+        "Ask about budget: Not 'what's your budget?' but 'have you invested in a website before? What did you pay?' This gives you a sense of their expectations without putting a number in their head first."
+      ]
+    },
+    {
+      "level": 3,
+      "style": "SubHeading",
+      "type": "heading",
+      "text": "Match to a tier"
+    },
+    {
+      "type": "table",
+      "header": [
+        "Signal",
+        "Likely tier"
+      ],
+      "rows": [
+        [
+          "Simple business, few services, basic brochure site, good content ready",
+          "Starter ($1,000+)"
+        ],
+        [
+          "Multiple services, photos, testimonials, wants booking or map, good content ready",
+          "Standard ($2,000)"
+        ],
+        [
+          "Complex needs, custom features, content gaps, multi-location, e-commerce adjacent",
+          "Custom (quote)"
+        ],
+        [
+          "Not sure / wants everything",
+          "Start with Standard scope conversation; clarify what they actually need vs. what they think they need"
+        ]
+      ]
+    },
+    {
+      "level": 3,
+      "style": "SubHeading",
+      "type": "heading",
+      "text": "Watch for scope creep signals"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "'Can we also add...' — anything beyond the tier's scope goes in the quote, not the existing build",
+        "'My cousin's friend said...' — other people's opinions are not scope. Politely anchor back to what we agreed.",
+        "'I'll know it when I see it' — this is the most expensive phrase in web design. Push for specific, concrete preferences before the build.",
+        "'Can you also handle...' — if it's a different service (SEO campaigns, email marketing, e-commerce, content writing), that's a separate engagement, not a build add-on.",
+        "Any request that sounds like 'just one more thing' during the build — confirm it's in scope or quote it before doing it."
+      ]
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "5. Handling Common Objections"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "These come up every time. Have a real answer ready — not a script, but a genuine response that addresses the concern."
+    },
+    {
+      "level": 3,
+      "style": "SubHeading",
+      "type": "heading",
+      "text": "'I can do it myself on a builder for cheap'"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "You can. And in six months you'll either be frustrated that it doesn't look the way you want, or you'll have spent 40 hours building it yourself when you could have been running your business. The $2,000 Standard build pays for itself in time saved and a better result. And you own it — no subscription, no platform, no one who can turn it off."
+    },
+    {
+      "level": 3,
+      "style": "SubHeading",
+      "type": "heading",
+      "text": "'The monthly fee seems high for just hosting'"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "The Care Plan is not 'just hosting' — hosting is free (Netlify free tier, which we use). The $60/month covers: someone watching your site 24/7 so you don't have to, security updates so you're not vulnerable, renewal reminders so you never lose your domain, and a human who answers when something needs attention. The hosting itself costs you nothing. The Care Plan is for the relationship and the peace of mind. You can cancel it anytime and keep your site."
+    },
+    {
+      "level": 3,
+      "style": "SubHeading",
+      "type": "heading",
+      "text": "'Can I just pay once and be done?'"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "You can — the build fee is one-time. But a website that isn't maintained doesn't stay healthy. Links break. Software needs updates. Domains expire. A site that's 'done' in 2024 is a liability in 2027 if nobody's watching it. The Care Plan is how we make sure your site stays an asset, not a neglected thing that's broken when you finally need it. That said — you don't have to be on a Care Plan. You can take the site and manage it yourself. We'll hand it over cleanly and give you everything you need to do that."
+    },
+    {
+      "level": 3,
+      "style": "SubHeading",
+      "type": "heading",
+      "text": "'I already have a site — can you just fix it?'"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "Sometimes yes, sometimes no. If the existing site is on a builder platform or was built by someone who's gone, we may not be able to work with it directly. We can usually either (a) build a new site on our kit using your existing content, or (b) audit the existing site and tell you what's wrong and what it would take to fix it. Ask to see the current site first — don't quote a fix without looking."
+    },
+    {
+      "level": 3,
+      "style": "SubHeading",
+      "type": "heading",
+      "text": "'I need it cheaper / I don't have the budget'"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "Two options: (1) Reduce scope — go from Standard to Starter, drop the gallery, drop testimonials, keep the essentials. (2) Delay — if now isn't the right time financially, that's fine. The site will be here when you're ready. What we won't do is build a cheap site that doesn't serve the business, or discount below our floor. A bad website is worse than no website — it sends the wrong message to customers."
+    },
+    {
+      "level": 3,
+      "style": "SubHeading",
+      "type": "heading",
+      "text": "'How long will it take?'"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "5–7 days from when we have all your content. The bottleneck is almost always content — the checklist exists so you know exactly what to gather. The more complete your materials, the faster we launch. If you have everything ready, we can often turn a Starter site around in 3–4 days."
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "6. The Math: Why This Works"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "A simple model to keep in mind when thinking about the business."
+    },
+    {
+      "type": "table",
+      "header": [
+        "Scenario",
+        "Math",
+        "Result"
+      ],
+      "rows": [
+        [
+          "20 clients on Care Plan ($60/mo)",
+          "$60 x 20 = $1,200/month",
+          "Predictable recurring before any new builds"
+        ],
+        [
+          "20 clients on Care Plan+ ($100/mo)",
+          "$100 x 20 = $2,000/month",
+          "Stronger recurring, more involved client relationship"
+        ],
+        [
+          "Mixed: 10 Care Plan + 10 Care Plan+",
+          "$600 + $1,000 = $1,600/month",
+          "Diversifies the client base by engagement level"
+        ],
+        [
+          "One Standard build per month + existing recurring",
+          "$2,000 build + $1,200–$2,000 recurring = $3,200–$4,000/month",
+          "Growth mode — new builds add to a stable base"
+        ],
+        [
+          "3-year value of a Standard client",
+          "$2,000 build + ($60 x 36) = $4,160",
+          "And they own the site. Builder at $97/mo over 3 years = $3,492 and they own nothing."
+        ]
+      ]
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": ""
+    },
+    {
+      "style": "PitchText",
+      "type": "paragraph",
+      "text": "The business works if the retainers are the foundation and the build fees are the upside. If you chase build fees and ignore retainers, you're in a one-time-fee business — feast or famine, no predictability. If you sell the Care Plan as the primary relationship and the build as the on-ramp, you build a sustainable business with a baseline that grows month over month."
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "7. Qualification Signals"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "Not every prospect is a good fit. Qualify before investing time."
+    },
+    {
+      "level": 3,
+      "style": "SubHeading",
+      "type": "heading",
+      "text": "Good fits"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Local business with a physical location or defined service area",
+        "Owns or is willing to own their domain",
+        "Has (or is willing to get) a Google Business Profile",
+        "Has content to put on the site — or is willing to create it",
+        "Understands that a website is an investment, not an expense",
+        "Values ownership and a real relationship over the cheapest option",
+        "Has a budget that can accommodate a $1,000+ build and $60+/month ongoing",
+        "Is the decision-maker or can reach the decision-maker easily"
+      ]
+    },
+    {
+      "level": 3,
+      "style": "SubHeading",
+      "type": "heading",
+      "text": "Poor fits (decline or refer out)"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Wants a $100 website — not our market; refer to a template or builder solution",
+        "Won't own their domain — walk away; this always ends badly",
+        "Expects a website to fix a broken business — the site amplifies what's already there, it doesn't fix fundamentals",
+        "Has no content and no intention of creating it — a site without content is an empty building",
+        "Isn't the decision-maker and can't get buy-in — you'll spend time and get nowhere",
+        "Wants ongoing work that's outside our model (e-commerce, complex web apps, ongoing content campaigns) — refer to the right specialist",
+        "Treats the website as a one-time purchase with no ongoing relationship — this is the opposite of what we sell; don't force it"
+      ]
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "8. The Project Agreement (what it should cover)"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "A clear agreement prevents most problems. Make sure every project has one in writing before work starts."
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Scope: Exactly what's being built, what tier, what's included. Reference the Content Checklist as the content that will be used.",
+        "Timeline: Estimated build duration and launch date, contingent on content being delivered on time.",
+        "Payment: Build fee amount, deposit (typically 50% to start, 50% on completion), when invoices are due.",
+        "Revisions: Number of revision rounds included (2), what counts as a revision (vs. a new feature or scope change), what happens after the included rounds.",
+        "Care Plan: The monthly retainer they're signing up for, what it covers, how to cancel (30 days' notice), what happens at cancellation.",
+        "Ownership: Clear statement that the client owns the site files, domain, content, and analytics data. We retain the starter kit framework IP.",
+        "Accounts: Statement that we set up third-party services (Formspree, Calendly, Netlify, Google Business Profile) in the client's accounts, not ours. List of accounts and access.",
+        "Content responsibility: The client is responsible for providing accurate, complete content by the agreed date. Delays in content delay launch.",
+        "What's not included: A clear list (copywriting, photography, logo design, advanced SEO, e-commerce, etc.) so there are no surprises.",
+        "Termination: Either party can end the agreement. If the client terminates during the build, the deposit is retained and any work completed is delivered. If we terminate (rare), we deliver what's done and refund the unearned portion.",
+        "Signatures: Both parties sign before work begins."
+      ]
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "9. Quick Conversation Framework"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "A simple structure for an initial conversation with a prospect. Adapt it — don't read it verbatim."
+    },
+    {
+      "type": "table",
+      "header": [
+        "Step",
+        "What you do",
+        "What you learn"
+      ],
+      "rows": [
+        [
+          "1. Understand their business",
+          "Ask what they do, who their customers are, what they sell or offer. Listen more than you talk.",
+          "Whether they're a good fit; what the site needs to do for them"
+        ],
+        [
+          "2. Understand their current situation",
+          "Ask about their current site (if any), their Google Business Profile, social media, online reviews, how customers currently find them.",
+          "Where they are now; what's working and what's not; what the gap is"
+        ],
+        [
+          "3. Understand their goals",
+          "Ask what they want the website to do. More phone calls? Foot traffic? Online bookings? A better first impression? Be specific.",
+          "What success looks like to them; what to emphasize in the proposal"
+        ],
+        [
+          "4. Explain the model briefly",
+          "Lead with ownership. 'You own the site, we care for it, no ongoing platform fees.' Mention the Care Plan as the primary relationship.",
+          "Whether the ownership pitch resonates; whether they're a retainer-oriented client"
+        ],
+        [
+          "5. Talk pricing at the right point",
+          "After you understand their needs, talk about the build tier and Care Plan. Lead with the retainer. Anchor with the Standard tier ($2,000) as the most common choice.",
+          "Their budget expectations; their reaction to the pricing; whether they're serious"
+        ],
+        [
+          "6. Scope the project",
+          "Based on what you've learned, recommend a tier and outline what's included. Be specific about what's in scope and what's not.",
+          "A clear scope you can put in a proposal; any scope concerns you need to address"
+        ],
+        [
+          "7. Close with next steps",
+          "Send the Content Checklist, the project agreement, and the proposal. Ask when they want to start. Don't leave the conversation without a clear next step.",
+          "A committed next step; a sense of timeline; whether they're ready to move forward"
+        ]
+      ]
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "10. Red Flags in a Sales Conversation"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "They won't talk about budget at all — either they have none, or they're not serious",
+        "They want everything for free or for a nominal fee — not a fit; refer out",
+        "They won't own their domain or want to discuss it — walk away; this always causes problems",
+        "They're more interested in arguing about the builder they already use than in understanding the alternative — they're not ready",
+        "They want a website to fix problems that are not website problems — a bad business with a good website is still a bad business",
+        "They want to skip the content checklist and 'just build it' — the build will be delayed and frustrating for both of you",
+        "They treat you like a commodity and compare you only to the cheapest builder — they're not valuing what you actually offer; this is a pricing trap",
+        "They're interested but won't make a decision or commit to a timeline — they may be shopping around; be helpful but don't chase indefinitely",
+        "They want a custom site but balk at the Standard tier price — the gap between what they want and what they'll pay is a problem; address it directly or decline"
+      ]
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "11. Positioning Reminders"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Never compete on price against builders. Compete on ownership, quality, and relationship. If you're the cheapest option, you've already lost.",
+        "The Care Plan is the product. The build is the on-ramp. Sell the relationship first, the site second.",
+        "The ownership pitch is your strongest differentiator. Builders can't offer it because their business model depends on renting access. You can offer it because your business model depends on keeping clients happy over time.",
+        "Don't overpromise. A small, well-built site that does what it's supposed to do is better than a bloated site with features nobody uses.",
+        "The Content Checklist exists for a reason — it prevents the most common cause of build delays. Send it early and be clear about its importance.",
+        "A happy client who refers another client is worth more than a marginally higher price from a reluctant one. Don't sacrifice the relationship for the sale.",
+        "If a prospect isn't a fit, say so. Referring them to something better for their situation builds trust and reputation. Chasing bad fits burns time and energy."
+      ]
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "12. Account Setup Checklist (per client)"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "For each new client, make sure these are in place before launch. This is your operational checklist — use it for every project."
+    },
+    {
+      "type": "table",
+      "header": [
+        "Item",
+        "Who owns it",
+        "Action needed",
+        "Done?"
+      ],
+      "rows": [
+        [
+          "Domain registered in client's name",
+          "Client",
+          "Confirm registrar and login; if new, guide purchase through Cloudflare or Namecheap",
+          "[ ]"
+        ],
+        [
+          "Google Business Profile claimed and verified",
+          "Client",
+          "If not yet claimed, guide through the process (10–30 min, requires verification)",
+          "[ ]"
+        ],
+        [
+          "Formspree account + contact form created",
+          "Client",
+          "Guide through account creation and form setup; paste form ID into site config",
+          "[ ]"
+        ],
+        [
+          "Calendly account + booking page (if needed)",
+          "Client",
+          "Guide through account creation and event type setup; paste URL into site config",
+          "[ ]"
+        ],
+        [
+          "Netlify account + site created",
+          "Client",
+          "Create site in client's Netlify account; connect GitHub auto-deploy; configure domain and SSL",
+          "[ ]"
+        ],
+        [
+          "GitHub repo for site source",
+          "Client",
+          "Create repo in client's GitHub account or org; push starter kit + config",
+          "[ ]"
+        ],
+        [
+          "Analytics setup (Plausible or GA4, optional)",
+          "Client",
+          "Set up account and install tracking snippet in site config",
+          "[ ]"
+        ],
+        [
+          "Content checklist completed",
+          "Client",
+          "All content gathered and submitted; verify completeness before build",
+          "[ ]"
+        ],
+        [
+          "Client accounts access transferred to client",
+          "Client",
+          "At handoff: confirm client has login access to all accounts; transfer any we managed on their behalf",
+          "[ ]"
+        ],
+        [
+          "Handoff document delivered",
+          "Client",
+          "Provide the Website Handoff Guide with all account details filled in",
+          "[ ]"
+        ]
+      ]
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "13. Quick Retention Reference"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "Things that keep clients on the Care Plan and happy."
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Monthly report (Care Plan+): A short email with uptime status, any changes made, and a glance at analytics. Even if nothing happened, send it. It shows you're paying attention.",
+        "Domain renewal reminders: Send these well before expiry (60 days, 30 days, 14 days, 7 days). Losing a domain is the worst outcome and entirely preventable.",
+        "Google Business Profile check-ins: Periodically check that hours, photos, and info are current. This directly affects local visibility.",
+        "Content edit responsiveness: Turnaround on Care Plan edits should be fast and predictable. This is the most visible part of the service day-to-day.",
+        "Check in after major holidays or seasons: 'Everything still looking right? Anything you want to update for the season?' — a small touch that shows you're thinking about their business.",
+        "Be proactive about problems: If something looks off, tell them before they notice. A client who hears about a problem from you before they see it themselves trusts you more than one who finds out on their own.",
+        "End-of-year check-in: A brief year-end note — what happened on the site this year, any recommendations for next year. Keeps the relationship warm and surfaces opportunities."
+      ]
+    }
+  ]
+}

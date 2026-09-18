@@ -1,0 +1,870 @@
+{
+  "page": {
+    "size": [
+      215.9,
+      279.4
+    ],
+    "margins_mm": [
+      25.4,
+      25.4,
+      25.4,
+      25.4
+    ]
+  },
+  "header": "Cornerstone Coffee Co. — Website Content Checklist",
+  "footer_page_numbers": true,
+  "styles": [
+    {
+      "name": "DocTitle",
+      "font": "Calibri",
+      "size_pt": 26,
+      "bold": true,
+      "color": "3B2314"
+    },
+    {
+      "name": "DocSubtitle",
+      "font": "Calibri",
+      "size_pt": 13,
+      "italic": true,
+      "color": "6B5B4E"
+    },
+    {
+      "name": "SectionHeading",
+      "font": "Calibri",
+      "size_pt": 16,
+      "bold": true,
+      "color": "3B2314"
+    },
+    {
+      "name": "ItemHeading",
+      "font": "Calibri",
+      "size_pt": 12,
+      "bold": true,
+      "color": "1A120B"
+    },
+    {
+      "name": "BodyText",
+      "font": "Calibri",
+      "size_pt": 11,
+      "color": "1A120B"
+    },
+    {
+      "name": "NoteText",
+      "font": "Calibri",
+      "size_pt": 10,
+      "italic": true,
+      "color": "6B5B4E"
+    }
+  ],
+  "blocks": [
+    {
+      "level": 1,
+      "style": "DocTitle",
+      "type": "heading",
+      "text": "Website Content Checklist"
+    },
+    {
+      "style": "DocSubtitle",
+      "type": "paragraph",
+      "text": "Cornerstone Coffee Co. — Local Business Web Service"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "Use this checklist to gather everything we need before and during the build. The more complete your materials are upfront, the faster we can launch and the better the site will represent your business."
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "1. Brand Essentials"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "These items define your visual identity and must be provided before design work begins."
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Client Action: Gather and send via the link or method your project contact shares."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Logo"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "What we need:"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Primary logo as a vector file (SVG preferred) or high-resolution PNG (at least 1000px wide)",
+        "Square/icon version of your logo for social media and favicon (PNG, 512×512 minimum)",
+        "Any variant you use (horizontal, stacked, with/without tagline)",
+        "If you don't have a logo yet, we can discuss a referral to a designer as a separate project"
+      ]
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Why it matters: The logo appears on every page — header, footer, and social links. A vector file ensures it looks sharp on any screen size."
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Priority: Required before design begins."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Brand Colors"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "What we need:"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Your primary brand color (hex code, e.g. #3B2314) — this is the dominant color on the site",
+        "Your accent color (hex code) — used for buttons, highlights, and links",
+        "Any secondary colors you use consistently (optional)",
+        "If you don't have defined brand colors, we'll propose a palette based on your logo and industry"
+      ]
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Why it matters: Your brand colors drive the entire site's look and feel. Once set, they're applied automatically across all pages and components."
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Priority: Preferred before design begins; can be finalized during review."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Fonts / Typography"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "What we need:"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Your primary display font (for headlines) — must be available on Google Fonts to keep the site fast and free",
+        "Your body font (for paragraphs and labels) — also from Google Fonts",
+        "If you don't have brand fonts, we'll recommend a pairing that suits your business type"
+      ]
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Why it matters: Google Fonts are free, fast to load, and work on every device. Using fonts outside Google Fonts adds cost and complexity for no benefit on a small business site."
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Priority: Optional — we can recommend a pairing if you don't have preferences."
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "2. Business Information"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "These are the facts about your business that appear throughout the site. Accuracy here directly affects trust and search visibility."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Business Name"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "What we need:"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Your exact business name as it should appear on the site and in search results",
+        "Any abbreviation or DBA you'd like noted (e.g. 'Cornerstone Coffee Co. — est. 2019')"
+      ]
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Priority: Required."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Tagline"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "What we need:"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "A one-sentence summary of what you do and who it's for (e.g. 'Small-batch coffee, brewed for the neighborhood.')",
+        "If you don't have a tagline, we can write a draft for your review"
+      ]
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Priority: Required — appears in the hero section of the homepage."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Description"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "What we need:"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "A 2–4 sentence description of your business — what you offer, where you're located, what makes you different",
+        "This appears in search result snippets (Google, Bing) and on the homepage — write it for a potential customer, not for yourself"
+      ]
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Priority: Required — used for SEO meta description and homepage intro."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Contact Information"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "What we need:"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Phone number — include country code if outside the US/Canada (e.g. +1 503-555-0142)",
+        "Email address — the address where you want contact form submissions to arrive",
+        "Street address (if you have a physical location customers visit) — full address including city, state, ZIP",
+        "If you're a service-area business without a public storefront, tell us — we'll handle this differently for SEO"
+      ]
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Priority: Required for contact page, map, and local SEO."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Hours of Operation"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "What we need:"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Opening and closing time for each day you're open (e.g. Monday: 7:00 AM – 6:00 PM)",
+        "Note any irregular hours, holiday hours, or days you're closed — we'll mark these on the site",
+        "If your hours change seasonally, let us know so we can plan updates"
+      ]
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Priority: Required if you have a physical location customers visit during specific hours."
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "3. Social Media"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "Links to your active social profiles appear in the header and footer. Only include profiles you actually use and update."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Social Profile URLs"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "What we need:"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Instagram profile URL (if you use it)",
+        "Facebook page URL (if you use it)",
+        "TikTok, YouTube, LinkedIn, or any other platform you'd like linked (optional)",
+        "If you don't have social profiles yet, that's fine — we won't add empty links"
+      ]
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Priority: Optional, but recommended — social proof and engagement help local SEO."
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "4. Services & Pricing"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "The services section is often the most-visited page after the homepage. Be specific — vague service descriptions lose customers."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Service List"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "What we need:"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Each service or product category you want listed (e.g. 'Espresso Drinks', 'Pour-Over Coffee', 'Cold Brew')",
+        "A 1–3 sentence description for each service — what it is, what makes it good, who it's for",
+        "Pricing for each service, if you're comfortable sharing it (starting prices work fine if exact prices vary)",
+        "If you offer packages or bundles, list them separately",
+        "If you prefer not to list prices, we can use 'Starting at $X' or 'Contact for pricing'"
+      ]
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Why it matters: Customers often decide within seconds whether to call or visit based on whether they see what they need and what it costs. Clear service descriptions reduce wasted calls."
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Priority: Required for the services page."
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "5. Photos & Images"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "Photos are the single biggest factor in how professional your site looks. Stock photos are a fine placeholder, but real photos of your business convert far better."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Photo & Image Requirements"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "What we need:"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "5–10 photos of your business, products, or team — the more the better",
+        "Preferred format: JPEG or PNG, 1200px on the longest side minimum, 2500px maximum",
+        "Orientation: a mix of landscape (for homepage hero, about section) and square/portrait (for gallery) works best",
+        "Accepted subjects: interior shots, exterior/storefront, product close-ups, team members, customers (with permission), detail shots of your work",
+        "If you have photos taken by a professional photographer, those are ideal — give us the highest-resolution versions you have",
+        "If you don't have photos yet, we'll use clearly-marked stock photo placeholders that you can replace later"
+      ]
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "What to avoid:"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Photos with heavy filters or editing that changes the actual appearance of your product or space",
+        "Photos you don't have rights to use (screenshotted from Google, other businesses' websites, or social media)",
+        "Blurry, dark, or heavily compressed images — a few good photos are better than many bad ones",
+        "Logos or branded items from other businesses visible in your photos (unless it's intentional, like a coffee bag on a counter)"
+      ]
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Priority: 3–5 photos minimum for launch; 5–10 ideal. Stock placeholders accepted if real photos aren't ready."
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "6. Testimonials & Reviews"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "Testimonials build trust and improve conversion. We can display them as manually-entered quotes or pull them from your Google Business Profile reviews — or both."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Manual Testimonials"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "What we need:"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "3–6 short testimonials (1–3 sentences each) from real customers",
+        "For each: the quote text, the customer's first name (or full name if they've agreed), and their role or relationship to you (e.g. 'Regular since 2020', 'Morning regular', 'Laptop worker')",
+        "If you have photos of the customers who gave testimonials, those are a bonus but not required",
+        "Make sure you have permission from each person to use their quote on your website"
+      ]
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Priority: 3 testimonials minimum for launch; 5–6 ideal."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Google Reviews Widget (optional)"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "What we need:"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "If you'd like to show a live feed of your Google Business Profile reviews on the site, we'll need your Google Business Profile to be claimed and verified",
+        "We'll set up the widget — you don't need to do anything technical for this",
+        "Note: the Google reviews widget is an optional enhancement and may require a small monthly fee from the review platform; we'll confirm before enabling it"
+      ]
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Priority: Optional — manual testimonials are a fine alternative."
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "7. Third-Party Services"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "Your site integrates with a few external services. You own each of these accounts — we'll set them up or connect them during the build, but they're yours to manage."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Contact Form"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "What we need:"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "A Formspree account (free) — we'll guide you through creating one and setting up a contact form",
+        "Once created, you give us the form ID and we configure the site to submit to it",
+        "You'll receive an email to confirm the form before it goes live",
+        "Formspree's free tier handles 50 submissions/month — more than enough for a local business contact form"
+      ]
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Priority: Required for the contact form to work. We'll walk you through setup."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Online Booking (optional)"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "What we need:"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "A Calendly account (free) — we'll guide you through creating one and setting up your event type",
+        "Once created, you give us your Calendly booking page URL and we embed it on the site",
+        "Only needed if you offer appointments, consultations, or bookings"
+      ]
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Priority: Optional — only if you want a booking widget on your site."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Google Business Profile"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "What we need:"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Your Google Business Profile claimed and verified — this is your business listing on Google Maps and in search results",
+        "If you haven't claimed it yet, we'll guide you through the process — it takes 10–30 minutes and requires a postcard, phone, or email verification from Google",
+        "A verified profile is one of the single biggest factors in showing up in local search results and Google Maps"
+      ]
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Priority: Strongly recommended — essential for local visibility. We'll help you claim it if you haven't."
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "8. Analytics (optional)"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "You may want to know how many people visit your site and what they do. We can set up analytics during the build or later."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Analytics Options"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "What we need:"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Plausible Analytics (recommended for most small businesses): a simple, privacy-friendly analytics tool. Free trial, then $9/month per site. We'll set it up — you just give us the account or we create one for you.",
+        "Google Analytics 4 (GA4): free, more detailed, but more complex. If you want it, we'll set up the property and install the tracking code. Note: GA4 requires a Google account and takes longer to set up.",
+        "No analytics: perfectly fine — many small business sites don't need detailed traffic data. The site works exactly the same either way."
+      ]
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Priority: Optional — we recommend Plausible for simplicity, but it's your choice."
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "9. Domain Name"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "Your domain is your address on the web (e.g. cornerstonecoffee.co). It's one of the few things you truly own — keep it registered in your name."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Domain Setup"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "What we need:"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Your domain name — either one you already own, or one you'd like to purchase",
+        "If you already own a domain: the registrar where it's registered (e.g. Cloudflare, Namecheap, GoDaddy) and your login access — we'll guide you through pointing it to your new site",
+        "If you need to buy a new domain: we recommend buying through Cloudflare (~$10–13/year, near wholesale) or Namecheap. Register it in YOUR name, not ours. We'll guide you through the purchase and DNS setup.",
+        "Important: never let an agency or developer register a domain on your behalf and keep it in their name. If they leave or go out of business, you lose your domain. Always register in your own name."
+      ]
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Priority: Required for launch — the site can be built and reviewed on a staging URL first, but the custom domain is needed to go live."
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "10. Email (optional upsell)"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "You can use your domain for professional email (e.g. hello@cornerstonecoffee.co). This is optional and separate from the website build."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Email Setup"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "What we need:"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "Your preference: Zoho Mail (free tier available, good for a single user or small team) or Google Workspace ($6/user/month, familiar if you already use Gmail)",
+        "The email addresses you want created (e.g. hello@, info@, yourname@)",
+        "We'll guide you through setting up the email service and configuring your domain's DNS records so email delivers correctly",
+        "Email setup is a separate service from the website build and may incur its own cost depending on the provider and complexity"
+      ]
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Priority: Optional — many businesses use a personal Gmail or other existing email during early stages and add professional email later."
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "11. Content Review & Approval"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "Before launch, you'll review the site on a private staging URL. This is your chance to catch anything that needs to change."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Review Process"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "We send you a link to a private staging version of your site — it looks and works exactly like the live site, but only people with the link can see it",
+        "You review on your own time and note anything you'd like changed",
+        "We include 2 rounds of revisions in the build fee — a 'round' is one batch of changes, not one change at a time",
+        "Revisions cover: text corrections, photo swaps, color tweaks, layout adjustments, and broken links. They do not cover adding new sections, new pages, or features not in the original scope.",
+        "After the 2 revision rounds, any additional changes are billed at our standard hourly rate unless you're on a Care Plan retainer"
+      ]
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Priority: You'll receive the staging link during the build. Plan for 1–2 hours to review thoroughly."
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "How to Submit Content"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "Send everything in one place — scattered emails and messages get lost."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Preferred Submission Methods"
+    },
+    {
+      "type": "bullet_list",
+      "items": [
+        "A shared Google Drive folder — we'll create one and send you the link. Drop all files there. This is the preferred method for photos and logo files.",
+        "A single email with everything attached — fine for text content and small files",
+        "A shared spreadsheet (Google Sheets) — useful for services, testimonials, and hours if you have a lot of data",
+        "Whatever works for you — we'll adapt to your workflow, but one place for everything keeps things from getting lost"
+      ]
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "File naming: please name files clearly (e.g. 'logo-primary.svg', 'coffee-shop-interior-1.jpg', 'testimonial-mara.jpg'). Avoid 'IMG_4829.jpg' without context."
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "Timeline"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "A typical build takes 5–7 days from the time we have all content plus 1–2 business days for each revision round."
+    },
+    {
+      "level": 3,
+      "style": "ItemHeading",
+      "type": "heading",
+      "text": "Typical Timeline"
+    },
+    {
+      "type": "table",
+      "header": [
+        "Phase",
+        "Duration",
+        "What Happens"
+      ],
+      "rows": [
+        [
+          "Kickoff",
+          "Day 0–1",
+          "We send the content checklist; you gather and submit materials; we confirm scope and pricing"
+        ],
+        [
+          "Build",
+          "Day 1–3",
+          "We customize the site with your content, brand colors, and photos; you get a staging link"
+        ],
+        [
+          "Review",
+          "Day 3–5",
+          "You review the staging site and send feedback; we make up to 2 rounds of revisions"
+        ],
+        [
+          "Launch",
+          "Day 5",
+          "We connect your domain, verify SSL, and make the site live; you get final handoff documents"
+        ]
+      ]
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "Delays usually come from missing content — the checklist exists to prevent that. The faster you get us complete materials, the faster we launch."
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "level": 2,
+      "style": "SectionHeading",
+      "type": "heading",
+      "text": "Questions?"
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "If anything on this checklist is unclear, or you're not sure what we need, just ask. We'd rather answer a question early than have you spend time gathering things we don't need."
+    },
+    {
+      "style": "BodyText",
+      "type": "paragraph",
+      "text": "Contact your project lead: [Your name and contact info here]"
+    },
+    {
+      "style": "NoteText",
+      "type": "paragraph",
+      "text": "This document is part of your website project toolkit. Keep it handy throughout the build."
+    }
+  ]
+}
