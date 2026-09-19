@@ -1,32 +1,28 @@
 // src/config/site.ts
 //
 // ONLY FILE EDITED PER CLIENT.
-// Everything about the site — content, design tokens, feature toggles,
-// third-party URLs — lives here. Components import from this file.
+// Business name, tagline, contact info, brand colors, content, and
+// feature toggles — everything lives here. Components import from this.
 //
 // For a new client: copy the kit, replace this file's values.
 
 export const site = {
   // ── Business identity ──────────────────────────────────────────────
-  // Proof-of-concept placeholder. Replace with real business details
-  // when you're ready. Until then: no name, just the Everfrost theme.
-  businessName: 'Everfrost',
-  tagline: 'Crafted with care, served with warmth.',
+  businessName: 'Øxis',
+  tagline: 'Design that works as hard as you do.',
   description:
-    'A proof-of-concept demo site built with the Everfrost theme — clean, modern, cold-aesthetic design. Replace with your real business details when you are ready.',
+    'Øxis is a modern design studio. We build brands, digital products, and experiences that look sharp and perform better. Clear thinking, clean execution.',
   keywords: [
-    'everfrost',
-    'demo',
-    'proof of concept',
-    'modern',
-    'clean design',
+    'Øxis',
+    'design studio',
+    'branding',
+    'digital products',
+    'modern design',
   ],
 
   // ── Contact ────────────────────────────────────────────────────────
-  // Placeholder contact details for the demo. Replace with your real
-  // info when you launch.
   phone: '',
-  email: '',
+  email: 'hello@oxis.studio',
   address: '',
 
   // ── Social ─────────────────────────────────────────────────────────
@@ -35,91 +31,85 @@ export const site = {
     facebook: undefined as string | undefined,
   },
 
-  // ── Design tokens (change these to re-theme the whole site) ───────
-  // Everfrost palette — cool icy blues with deep navy contrast.
-  // Modern, minimal, cold-aesthetic. Clean without being sterile.
+  // ── Design tokens ──────────────────────────────────────────────────
+  // Øxis palette — deeper navy anchor, sharper aqua accent.
+  // Slightly darker than the default kit, cleaner contrast overall.
   theme: {
-    primary: '#0E2A42',    // deep navy — the anchor
-    accent: '#2B9EB3',     // aqua ice — the energy
-    surface: '#F7FBFC',    // frost white — near-white with a hint of cool
+    primary: '#0A2540',     // deeper navy — the anchor
+    accent: '#1C7C9C',      // sharper aqua — more saturated, less wash
+    surface: '#F0F4F7',     // cool light gray — darker, less sterile white
     background: '#FFFFFF',
-    text: '#0E2A42',       // deep navy — matches primary for cohesion
-    mutedText: '#5A7A8A',  // muted ice blue — softer, never warm
-    fontDisplay: 'Lexend',  // modern geometric, clean, slightly tech
-    fontBody: 'Inter',      // neutral, readable, current
+    text: '#0A2540',        // deep navy — matches primary for cohesion
+    mutedText: '#54738B',   // deeper slate — reads better on light surfaces
+    fontDisplay: 'Lexend',
+    fontBody: 'Inter',
   },
 
   // ── Hero ───────────────────────────────────────────────────────────
   hero: {
-    headline: 'Everfrost.',
+    headline: 'Øxis',
     subheadline:
-      'A proof-of-concept site. Clean, modern, cold-aesthetic — built to show what the kit can do.',
-    cta: { label: 'Learn More', url: '/about' },
-    // Demo uses a placeholder; replace with a real image per client.
-    // Recommended size: 1200×600, optimized, under 150KB.
-    image: 'https://placehold.co/1200x600/0E2A42/2B9EB3?text=Everfrost',
+      'We design brands, products, and experiences that hold up under pressure.',
+    cta: { label: 'See the work', url: '/services' },
+    // Demo placeholder — replace with a real hero image per client.
+    // Recommended: 1200×600, optimized, under 150KB.
+    image: 'https://placehold.co/1200x600/0A2540/1C7C9C?text=Øxis',
   },
 
   // ── About ──────────────────────────────────────────────────────────
   about: {
-    title: 'What This Is',
-    body: `This is a proof-of-concept demo site built with a config-driven Astro + Tailwind starter kit. The theme is Everfrost — cool icy blues, deep navy, and modern geometric typography. It is intentionally minimal: no business name yet, no real contact details, just a clean design showing what the kit can produce. Replace this content when you are ready.`,
-    // Demo placeholder image.
-    image: 'https://placehold.co/800x500/F7FBFC/0E2A42?text=Everfrost+Theme',
+    title: 'What We Do',
+    body: `Øxis is a small design studio. We work with teams that need work they can ship with confidence — identity systems that actually get used, product interfaces that don't get in the way, and websites that load fast and convert without fuss. We keep our process short and our output tight. If a deliverable doesn't earn its place, it doesn't ship.`,
+    // Demo placeholder — replace with a real about/image per client.
+    image: 'https://placehold.co/800x500/F0F4F7/0A2540?text=Øxis+Studio',
   },
 
-  // ── Services (the "services" a local business offers) ──────────────
-  // Demo uses Everfrost-flavored placeholder services. Replace with
-  // the real client's offerings.
+  // ── Services ───────────────────────────────────────────────────────
   services: [
     {
-      title: 'Clean Layouts',
+      title: 'Brand Identity',
       description:
-        'Every page is intentionally simple — clear hierarchy, readable type, no visual noise. The kind of design that gets out of the way and lets the content breathe.',
-      price: '',
+        'Names, wordmarks, logos, color systems, and the visual language that holds a brand together across every surface it touches.',
+      price: 'Starting at £4,500',
     },
     {
-      title: 'Modern Branding',
+      title: 'Digital Products',
       description:
-        'A cohesive palette, a sharp logo system, and typography that feels current without chasing trends. The Everfrost aesthetic is cold-but-welcoming — not corporate, not rustic.',
-      price: '',
+        'Product interfaces, dashboards, and tools — designed to be clear first and attractive second. We care about how things work, not just how they look.',
+      price: 'From £6,000',
     },
     {
-      title: 'Config-Driven Setup',
+      title: 'Web & Marketing Sites',
       description:
-        'One config file drives the whole site. Change the name, colors, content, and toggles — the kit handles the rest. Built for the builder who wants one kit and many clients.',
-      price: '',
+        'Fast, clean websites built on a config-driven Astro kit — no bloat, no framework overhead, no surprises at launch. One config file, a real deploy, and a site that actually loads.',
+      price: 'From £2,000',
     },
     {
-      title: 'Fast & Lightweight',
+      title: 'Design Systems',
       description:
-        'Static Astro output. No React runtime, no hydration overhead. Pages load fast and search engines can read them without effort.',
-      price: '',
+        'Component libraries, token systems, and the rules that keep a growing product from drifting into inconsistency. Built so the next person who touches it can move fast without breaking things.',
+      price: 'From £5,000',
     },
   ],
 
   // ── Feature toggles ────────────────────────────────────────────────
-  // Turn a section off for a client that doesn't need it.
   showGallery: true,
-  showTestimonials: false, // POC — no testimonials yet
-  showBooking: false,       // user said no Calendly/setup
-  showMap: false,           // no address yet
+  showTestimonials: false,
+  showBooking: false,
+  showMap: false,
   showWhatsAppButton: false,
 
-  // ── Gallery (toggleable) ───────────────────────────────────────────
-  // Demo placeholder gallery. Each image is an Everfrost-toned
-  // placeholder until real photos are provided.
+  // ── Gallery ────────────────────────────────────────────────────────
   gallery: {
     images: [
-      'https://placehold.co/600x600/0E2A42/2B9EB3?text=01',
-      'https://placehold.co/600x600/2B9EB3/FFFFFF?text=02',
-      'https://placehold.co/600x600/F7FBFC/0E2A42?text=03',
-      'https://placehold.co/600x600/0E2A42/F7FBFC?text=04',
+      'https://placehold.co/600x600/0A2540/1C7C9C?text=01',
+      'https://placehold.co/600x600/1C7C9C/FFFFFF?text=02',
+      'https://placehold.co/600x600/F0F4F7/0A2540?text=03',
+      'https://placehold.co/600x600/0A2540/F0F4F7?text=04',
     ],
   },
 
-  // ── Testimonials (toggleable) ──────────────────────────────────────
-  // Disabled in config above; this array is a placeholder.
+  // ── Testimonials ───────────────────────────────────────────────────
   testimonials: [
     {
       quote: '',
@@ -131,21 +121,21 @@ export const site = {
   // ── Third-party integrations ───────────────────────────────────────
   contact: {
     // Formspree — each client owns their own form account.
-    // This demo endpoint: https://formspree.io/f/myezzvae
+    // Demo endpoint: https://formspree.io/f/myezzvae
     // Replace the ID below when you create a real form for your business.
     formspreeFormId: 'myzevbvae',
   },
 
   booking: {
-    // Calendly — user said NOT to set up as part of this POC.
-    // When you do add booking later, paste your Calendly URL here and
-    // set showBooking: true above.
+    // Calendly — not set up yet.
+    // When you add booking: paste your Calendly URL here and set
+    // showBooking: true above.
     calendlyUrl: undefined as string | undefined,
   },
 
   map: {
-    // Google Maps embed — user said NOT to set up as part of this POC.
-    // When you have a real address, set this from Google Maps → Share →
+    // Google Maps embed — not set up yet.
+    // When you have a real address: set this from Google Maps → Share →
     // Embed a map, and set showMap: true above.
     embedUrl: undefined as string | undefined,
   },

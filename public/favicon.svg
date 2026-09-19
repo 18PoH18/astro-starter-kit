@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
   <defs>
     <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#E7F6FA"/>
-      <stop offset="50%" stop-color="#B8E0EC"/>
-      <stop offset="100%" stop-color="#8BC4DA"/>
+      <stop offset="0%" stop-color="#0A2540"/>
+      <stop offset="50%" stop-color="#1C7C9C"/>
+      <stop offset="100%" stop-color="#0A2540"/>
     </linearGradient>
   </defs>
   <rect width="48" height="48" rx="10" fill="url(#g)"/>
-  <ellipse cx="24" cy="30" rx="10" ry="6" fill="#1D99B0"/>
-  <ellipse cx="24" cy="22" rx="5" ry="7" fill="#1D99B0"/>
-  <ellipse cx="24" cy="17" rx="4" ry="2" fill="#1D99B0"/>
-  <path d="M19,18 L16,8 L20,10 L24,5 L28,10 L32,8 L29,18 Z" fill="#2B9EB3"/>
-  <circle cx="22" cy="21" r="0.8" fill="#0E2A42"/>
+  <ellipse cx="24" cy="30" rx="10" ry="6" fill="#F0F4F7"/>
+  <ellipse cx="24" cy="22" rx="5" ry="7" fill="#F0F4F7"/>
+  <ellipse cx="24" cy="17" rx="4" ry="2" fill="#F0F4F7"/>
+  <path d="M19,18 L16,8 L20,10 L24,5 L28,10 L32,8 L29,18 Z" fill="#F0F4F7"/>
+  <circle cx="22" cy="21" r="0.8" fill="#0A2540"/>
 </svg>

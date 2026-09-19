@@ -38,9 +38,9 @@ import { site } from '../config/site';
   }
 
   .not-found-content {
-    text-align: center;
-    max-width: 24rem;
+    max-width: 20rem;
     margin: 0 auto;
+    text-align: center;
   }
 
   .not-found-eyebrow {
@@ -55,36 +55,40 @@ import { site } from '../config/site';
 
   .not-found-title {
     font-family: var(--font-display), serif;
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(2rem, 4vw, 2.5rem);
     font-weight: 700;
     letter-spacing: -0.02em;
     margin: 0 0 1rem;
+    line-height: 1.15;
     color: var(--color-text);
   }
 
   .not-found-description {
-    font-size: 1rem;
+    font-size: 1.0625rem;
     line-height: 1.65;
     color: var(--color-muted);
     margin: 0 0 2rem;
   }
 
   .not-found-cta {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.75rem 1.75rem;
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
     background: var(--color-accent);
     color: #fff;
-    font-size: 1rem;
     font-weight: 600;
+    font-size: 0.9375rem;
     text-decoration: none;
-    border-radius: 9999px;
+    border-radius: 0.5rem;
     transition: background 0.15s ease, transform 0.15s ease;
   }
 
   .not-found-cta:hover {
     background: color-mix(in srgb, var(--color-accent) 85%, #000);
     transform: translateY(-1px);
+  }
+
+  .not-found-cta:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
   }
 </style>

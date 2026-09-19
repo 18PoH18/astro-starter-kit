@@ -9,10 +9,10 @@ import { site } from '../config/site';
 <Base title="Contact">
   <div class="page-hero">
     <div class="container">
-      <span class="page-eyebrow">Visit or Reach Out</span>
-      <h1 class="page-title">Get in Touch</h1>
+      <span class="page-eyebrow">Get in Touch</span>
+      <h1 class="page-title">Contact Øxis</h1>
       <p class="page-description">
-        Stop by, call, or send us a message. We'd love to hear from you.
+        Have a project in mind? Send us a message and we'll get back to you.
       </p>
     </div>
   </div>
@@ -21,18 +21,18 @@ import { site } from '../config/site';
     <div class="container">
       <div class="contact-grid">
         <section class="contact-info" aria-labelledby="contact-info-heading">
-          <h2 id="contact-info-heading" class="info-section-title">Find Us</h2>
+          <h2 id="contact-info-heading" class="info-section-title">Contact</h2>
 
           <address class="contact-address">
-            <p class="address-line">{site.address}</p>
+            <p class="address-line">{site.address || '—'}</p>
             <p class="contact-link-line">
               <a href={`tel:${site.phone.replace(/[^+\d]/g, '')}`} class="contact-link">
-                {site.phone}
+                {site.phone || '—'}
               </a>
             </p>
             <p class="contact-link-line">
               <a href={`mailto:${site.email}`} class="contact-link">
-                {site.email}
+                {site.email || '—'}
               </a>
             </p>
           </address>
@@ -48,54 +48,14 @@ import { site } from '../config/site';
               ))}
             </ul>
           </div>
-
-          {site.showWhatsAppButton && (
-            <a
-              href={`https://wa.me/${site.phone.replace(/[^+\d]/g, '')}`}
-              class="whatsapp-contact-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.672.148-.199.297-.768.966-.94 1.164-.173.199-.347.223-.644.075-.297-.151-1.255-.464-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.371z"/>
-                <path d="M12 0C5.373 0 0 5.373 0 12c0 2.213.436 4.227 1.208 5.97.102.221.207.434.319.633.031.074.047.216.047.477 0 .547-.134.914-.403 1.208-.422.422-1.196.697-2.263.697-1.067 0-1.84-1.02-2.261-2.52-.24-.86-.24-1.674 0-2.534.223-.704.597-1.208 1.208-1.208.174 0 .458.031.769.102.35.075.57.269.57.644 0 .37-.269.74-.82.958-.421.173-1.016.348-1.657.348-.644 0-1.197-.27-1.5-.66-.242-.3-.393-.446-.686-.52-.242-.074-.488-.074-.738-.074s-.496.0-.738.074c-.22.047-.37.198-.512.371-.149.173-.223.396-.223.671 0 .273.074.546.223.82.297.547 1.016 1.481 1.016 2.839 0 1.359-.82 2.395-1.794 2.617-.099.022-1.739.347-2.433.347-.72 0-1.358-.25-1.694-.625-.37-.396-.546-.869-.546-1.48 0-.198.025-.37.074-.57.075-.33.269-.52.57-.625.243-.074.488-.149.738-.149.25 0 .496.074.738.222.242.149.366.37.366.693 0 .37-.173.693-.51.892-.37.242-1.04.488-1.04.74 0 .198.124.371.37.52.242.149.546.223.87.223.33.075.625.075.87.075.546 0 1.092-.298 1.694-.992.57-.66.82-1.414.82-2.232 0-.983-.625-1.826-1.727-2.261-.149-.047-3.114-.685-3.114-3.288 0-1.674 1.197-3.122 2.827-3.424.625-.124 1.208-.174 1.727-.174.519 0 .975.049 1.358.149.383.099 1.04.347 1.244.74.297.693.173 1.386.099 1.838z"/>
-              </svg>
-              Chat with us on WhatsApp
-            </a>
-          )}
-
-          {site.social.instagram && (
-            <div class="social-contact-links">
-              <a
-                href={site.social.instagram}
-                class="social-contact-link"
-                aria-label="Follow us on Instagram"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-                </svg>
-                Follow us on Instagram
-              </a>
-            </div>
-          )}
         </section>
 
-        <section class="contact-form-section" aria-labelledby="contact-form-heading">
-          <h2 id="contact-form-heading" class="form-section-title">Send a Message</h2>
-          <p class="form-section-description">
-            Fill out the form and we'll get back to you within one business day.
-          </p>
+        <section class="contact-form-section">
           <ContactForm />
         </section>
       </div>
     </div>
   </div>
-
-  <Map />
 </Base>
 
 <style>
@@ -136,7 +96,7 @@ import { site } from '../config/site';
     line-height: 1.65;
     opacity: 0.85;
     margin: 0;
-    max-width: 28rem;
+    max-width: 32rem;
     margin-left: auto;
     margin-right: auto;
   }
@@ -150,49 +110,37 @@ import { site } from '../config/site';
     display: grid;
     grid-template-columns: 1fr;
     gap: 3rem;
-    align-items: start;
+    margin-bottom: 2rem;
   }
 
-  .info-section-title,
-  .form-section-title {
+  .info-section-title {
     font-family: var(--font-display), serif;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    letter-spacing: -0.01em;
-    margin: 0 0 1rem;
+    margin: 0 0 1.5rem;
     color: var(--color-text);
-  }
-
-  .form-section-description {
-    color: var(--color-muted);
-    margin: 0 0 2rem;
-    font-size: 1rem;
-    line-height: 1.6;
   }
 
   .contact-address {
     font-style: normal;
-    margin: 0 0 2rem;
+    color: var(--color-muted);
+    line-height: 1.7;
   }
 
   .address-line {
-    font-size: 1.0625rem;
-    font-weight: 500;
-    color: var(--color-text);
     margin: 0 0 0.75rem;
+    font-size: 1rem;
   }
 
   .contact-link-line {
     margin: 0;
-    font-size: 0.9375rem;
-    color: var(--color-muted);
-    line-height: 1.6;
   }
 
   .contact-link {
     color: var(--color-accent);
-    text-decoration: none;
     font-weight: 500;
+    text-decoration: none;
+    transition: text-decoration 0.15s ease;
   }
 
   .contact-link:hover {
@@ -200,28 +148,27 @@ import { site } from '../config/site';
   }
 
   .hours-block {
-    padding: 1.5rem;
-    background: var(--color-bg);
-    border-radius: 0.75rem;
-    border: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent);
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid color-mix(in srgb, var(--color-text) 10%, transparent);
   }
 
   .hours-heading {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     font-weight: 600;
-    letter-spacing: 0.12em;
     text-transform: uppercase;
+    letter-spacing: 0.08em;
     color: var(--color-muted);
     margin: 0 0 1rem;
   }
 
   .hours-list {
     list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5rem 1.5rem;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem 1rem;
   }
 
   .hours-list li {
@@ -229,12 +176,11 @@ import { site } from '../config/site';
     justify-content: space-between;
     gap: 1rem;
     font-size: 0.9375rem;
-    line-height: 1.5;
+    color: var(--color-text);
   }
 
   .day {
     font-weight: 500;
-    color: var(--color-text);
   }
 
   .hours {
@@ -242,50 +188,19 @@ import { site } from '../config/site';
     text-align: right;
   }
 
-  .whatsapp-contact-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-top: 1.5rem;
-    color: #128C7E;
-    text-decoration: none;
-    font-size: 0.9375rem;
-    font-weight: 500;
-    transition: color 0.15s ease;
+  .contact-form-section {
+    display: flex;
+    flex-direction: column;
   }
 
-  .whatsapp-contact-link:hover {
-    color: #075E54;
-  }
-
-  .social-contact-links {
-    margin-top: 1rem;
-  }
-
-  .social-contact-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: var(--color-muted);
-    text-decoration: none;
-    font-size: 0.9375rem;
-    font-weight: 500;
-    margin-top: 0.75rem;
-    transition: color 0.15s ease;
-  }
-
-  .social-contact-link:hover {
-    color: var(--color-accent);
-  }
-
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     .contact-grid {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1.2fr;
       gap: 4rem;
     }
 
     .hours-list {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(7, 1fr);
     }
   }
 </style>

@@ -2,6 +2,7 @@
 // src/pages/services.astro
 import Base from '../layouts/Base.astro';
 import Services from '../components/Services.astro';
+import Pricing from '../components/Pricing.astro';
 import Map from '../components/Map.astro';
 ---
 
@@ -9,15 +10,15 @@ import Map from '../components/Map.astro';
   <div class="page-hero">
     <div class="container">
       <span class="page-eyebrow">What We Offer</span>
-      <h1 class="page-title">Our Services</h1>
+      <h1 class="page-title">Services & Pricing</h1>
       <p class="page-description">
-        From espresso to pastries, here's what you'll find at Cornerstone Coffee Co.
+        Four core services, transparent starting prices. Every project is scoped properly before we quote — what you see here is the entry point, not a ceiling.
       </p>
     </div>
   </div>
 
   <Services />
-
+  <Pricing />
   <Map />
 </Base>
 
@@ -59,7 +60,7 @@ import Map from '../components/Map.astro';
     line-height: 1.65;
     opacity: 0.85;
     margin: 0;
-    max-width: 28rem;
+    max-width: 32rem;
     margin-left: auto;
     margin-right: auto;
   }
