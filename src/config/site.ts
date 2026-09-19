@@ -8,164 +8,146 @@
 
 export const site = {
   // ── Business identity ──────────────────────────────────────────────
-  businessName: 'Cornerstone Coffee Co.',
-  tagline: 'Small-batch coffee, brewed for the neighborhood.',
+  // Proof-of-concept placeholder. Replace with real business details
+  // when you're ready. Until then: no name, just the Everfrost theme.
+  businessName: 'Everfrost',
+  tagline: 'Crafted with care, served with warmth.',
   description:
-    'Cornerstone Coffee Co. is a neighborhood coffee shop in downtown Portland serving single-origin pour-overs, espresso drinks, and fresh pastries made daily. Open seven days a week.',
+    'A proof-of-concept demo site built with the Everfrost theme — clean, modern, cold-aesthetic design. Replace with your real business details when you are ready.',
   keywords: [
-    'coffee shop',
-    'Portland',
-    'espresso',
-    'pour over',
-    'cafe',
-    'breakfast',
-    'pastries',
+    'everfrost',
+    'demo',
+    'proof of concept',
+    'modern',
+    'clean design',
   ],
 
   // ── Contact ────────────────────────────────────────────────────────
-  phone: '+1 (503) 555-0142',
-  email: 'hello@cornerstonecoffee.co',
-  address: '421 SW 3rd Ave, Portland, OR 97210',
-
-  hours: {
-    monday: '7:00 AM – 6:00 PM',
-    tuesday: '7:00 AM – 6:00 PM',
-    wednesday: '7:00 AM – 6:00 PM',
-    thursday: '7:00 AM – 6:00 PM',
-    friday: '7:00 AM – 7:00 PM',
-    saturday: '8:00 AM – 7:00 PM',
-    sunday: '8:00 AM – 5:00 PM',
-  },
+  // Placeholder contact details for the demo. Replace with your real
+  // info when you launch.
+  phone: '',
+  email: '',
+  address: '',
 
   // ── Social ─────────────────────────────────────────────────────────
   social: {
-    instagram: 'https://instagram.com/cornerstonecoffee',
-    facebook: 'https://facebook.com/cornerstonecoffee',
+    instagram: undefined as string | undefined,
+    facebook: undefined as string | undefined,
   },
 
   // ── Design tokens (change these to re-theme the whole site) ───────
+  // Everfrost palette — cool icy blues with deep navy contrast.
+  // Modern, minimal, cold-aesthetic. Clean without being sterile.
   theme: {
-    primary: '#3B2314', // deep brown
-    accent: '#C45C3E', // terracotta
-    surface: '#FAF7F2', // warm cream
+    primary: '#0E2A42',    // deep navy — the anchor
+    accent: '#2B9EB3',     // aqua ice — the energy
+    surface: '#F7FBFC',    // frost white — near-white with a hint of cool
     background: '#FFFFFF',
-    text: '#1A120B',
-    mutedText: '#6B5B4E',
-    fontDisplay: 'Playfair Display',
-    fontBody: 'Inter',
+    text: '#0E2A42',       // deep navy — matches primary for cohesion
+    mutedText: '#5A7A8A',  // muted ice blue — softer, never warm
+    fontDisplay: 'Lexend',  // modern geometric, clean, slightly tech
+    fontBody: 'Inter',      // neutral, readable, current
   },
 
   // ── Hero ───────────────────────────────────────────────────────────
   hero: {
-    headline: 'Coffee that tastes like the place it grew.',
+    headline: 'Everfrost.',
     subheadline:
-      'Single-origin beans, roasted locally, brewed by hand every morning.',
-    cta: { label: 'Find Us', url: '/contact' },
+      'A proof-of-concept site. Clean, modern, cold-aesthetic — built to show what the kit can do.',
+    cta: { label: 'Learn More', url: '/about' },
     // Demo uses a placeholder; replace with a real image per client.
     // Recommended size: 1200×600, optimized, under 150KB.
-    image: 'https://placehold.co/1200x600/3B2314/FAF7F2?text=Cornerstone+Coffee+Co.',
+    image: 'https://placehold.co/1200x600/0E2A42/2B9EB3?text=Everfrost',
   },
 
   // ── About ──────────────────────────────────────────────────────────
   about: {
-    title: 'Our Story',
-    body: `Cornerstone Coffee Co. opened in 2019 with a simple idea: great coffee shouldn't come with pretense. We source our beans directly from farms we've visited, roast them in small batches a few blocks away, and serve them the way coffee should taste — honest, warm, and worth lingering over.`,
+    title: 'What This Is',
+    body: `This is a proof-of-concept demo site built with a config-driven Astro + Tailwind starter kit. The theme is Everfrost — cool icy blues, deep navy, and modern geometric typography. It is intentionally minimal: no business name yet, no real contact details, just a clean design showing what the kit can produce. Replace this content when you are ready.`,
     // Demo placeholder image.
-    image: 'https://placehold.co/800x500/FAF7F2/3B2314?text=Our+Shop',
+    image: 'https://placehold.co/800x500/F7FBFC/0E2A42?text=Everfrost+Theme',
   },
 
   // ── Services (the "services" a local business offers) ──────────────
+  // Demo uses Everfrost-flavored placeholder services. Replace with
+  // the real client's offerings.
   services: [
     {
-      title: 'Espresso Drinks',
+      title: 'Clean Layouts',
       description:
-        'Cortado, latte, cappuccino, and seasonal specials — all pulled from locally roasted beans.',
-      price: 'Starting at $4.50',
+        'Every page is intentionally simple — clear hierarchy, readable type, no visual noise. The kind of design that gets out of the way and lets the content breathe.',
+      price: '',
     },
     {
-      title: 'Pour-Over Coffee',
+      title: 'Modern Branding',
       description:
-        'Single-origin beans brewed to order. Ask for the day\'s selection.',
-      price: 'Starting at $6.00',
+        'A cohesive palette, a sharp logo system, and typography that feels current without chasing trends. The Everfrost aesthetic is cold-but-welcoming — not corporate, not rustic.',
+      price: '',
     },
     {
-      title: 'Cold Brew',
+      title: 'Config-Driven Setup',
       description:
-        'Steeped 18 hours, smooth and bold. Available hot or over ice.',
-      price: '$5.50',
+        'One config file drives the whole site. Change the name, colors, content, and toggles — the kit handles the rest. Built for the builder who wants one kit and many clients.',
+      price: '',
     },
     {
-      title: 'Fresh Pastries',
+      title: 'Fast & Lightweight',
       description:
-        'Croissants, scones, and muffins baked fresh every morning by our neighbors at Baker & Bean.',
-      price: 'Starting at $3.75',
-    },
-    {
-      title: 'Take-Home Bags',
-      description:
-        'Steam-perfumed bags of our house roast and rotating single-origins, available by the bag or subscription.',
-      price: 'From $16.00',
+        'Static Astro output. No React runtime, no hydration overhead. Pages load fast and search engines can read them without effort.',
+      price: '',
     },
   ],
 
   // ── Feature toggles ────────────────────────────────────────────────
   // Turn a section off for a client that doesn't need it.
   showGallery: true,
-  showTestimonials: true,
-  showBooking: false, // coffee shop doesn't book appointments — demo of toggle-off
-  showMap: true,
+  showTestimonials: false, // POC — no testimonials yet
+  showBooking: false,       // user said no Calendly/setup
+  showMap: false,           // no address yet
   showWhatsAppButton: false,
 
   // ── Gallery (toggleable) ───────────────────────────────────────────
+  // Demo placeholder gallery. Each image is an Everfrost-toned
+  // placeholder until real photos are provided.
   gallery: {
     images: [
-      'https://placehold.co/600x600/C45C3E/FFFFFF?text=gallery+1',
-      'https://placehold.co/600x600/3B2314/FAF7F2?text=gallery+2',
-      'https://placehold.co/600x600/FAF7F2/3B2314?text=gallery+3',
-      'https://placehold.co/600x600/3B2314/C45C3E?text=gallery+4',
+      'https://placehold.co/600x600/0E2A42/2B9EB3?text=01',
+      'https://placehold.co/600x600/2B9EB3/FFFFFF?text=02',
+      'https://placehold.co/600x600/F7FBFC/0E2A42?text=03',
+      'https://placehold.co/600x600/0E2A42/F7FBFC?text=04',
     ],
   },
 
   // ── Testimonials (toggleable) ──────────────────────────────────────
+  // Disabled in config above; this array is a placeholder.
   testimonials: [
     {
-      quote:
-        'Best flat white in Portland, hands down. The cortado is perfection.',
-      author: 'Mara T.',
-      role: 'Regular since 2020',
-    },
-    {
-      quote:
-        'I come for the coffee and stay for the pastries. The almond croissant is dangerously good.',
-      author: 'Jonah R.',
-      role: 'Morning regular',
-    },
-    {
-      quote:
-        'Warm, unhurried, and the espresso is consistently excellent. This is my neighborhood spot.',
-      author: 'Priya S.',
-      role: 'Laptop worker',
+      quote: '',
+      author: '',
+      role: '',
     },
   ],
 
   // ── Third-party integrations ───────────────────────────────────────
   contact: {
-    // From https://formspree.io/f/xzezbqko — client owns this account.
-    // Each client pastes their own form ID here.
-    formspreeFormId: 'xzezbqko',
+    // Formspree — each client owns their own form account.
+    // This demo endpoint: https://formspree.io/f/myezzvae
+    // Replace the ID below when you create a real form for your business.
+    formspreeFormId: 'myzevbvae',
   },
 
   booking: {
-    // Client sets their own Calendly booking page URL.
-    // Demo uses a placeholder; showBooking is false above so this isn't rendered.
-    calendlyUrl: 'https://calendly.com/yourbusiness/30min',
+    // Calendly — user said NOT to set up as part of this POC.
+    // When you do add booking later, paste your Calendly URL here and
+    // set showBooking: true above.
+    calendlyUrl: undefined as string | undefined,
   },
 
   map: {
-    // Google Maps embed URL for the business address.
-    // Client sets this from Google Maps → Share → Embed a map.
-    embedUrl:
-      'https://www.google.com/maps?q=421+SW+3rd+Ave+Portland+OR&output=embed',
+    // Google Maps embed — user said NOT to set up as part of this POC.
+    // When you have a real address, set this from Google Maps → Share →
+    // Embed a map, and set showMap: true above.
+    embedUrl: undefined as string | undefined,
   },
 
   // ── Analytics (opt-in, per client) ────────────────────────────────

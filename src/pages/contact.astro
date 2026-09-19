@@ -40,7 +40,7 @@ import { site } from '../config/site';
           <div class="hours-block">
             <h3 class="hours-heading">Hours</h3>
             <ul class="hours-list">
-              {Object.entries(site.hours).map(([day, hours]) => (
+              {site.hours && Object.entries(site.hours).map(([day, hours]) => (
                 <li>
                   <span class="day">{day.charAt(0).toUpperCase() + day.slice(1)}</span>
                   <span class="hours">{hours}</span>

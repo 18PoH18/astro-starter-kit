@@ -7,21 +7,23 @@
 @import "tailwindcss";
 
 @theme {
-  /* Display font: Playfair Display — set via Google Fonts in Base.astro */
-  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  /* Display font: Lexend — clean, modern, geometric.
+     Loaded via Google Fonts in Base.astro. */
+  --font-display: 'Lexend', system-ui, -apple-system, sans-serif;
 
-  /* Body font: Inter — set via Google Fonts in Base.astro */
+  /* Body font: Inter — neutral, readable, current.
+     Loaded via Google Fonts in Base.astro. */
   --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 
   /* Brand tokens — clients override via inline <style> on <body> in Base.astro.
-     These defaults match the demo (Cornerstone Coffee Co.) but are replaced
+     These defaults match the demo (Everfrost theme) but are replaced
      per-client at build time by the site config. */
   --color-bg: #ffffff;
-  --color-text: #1a120b;
-  --color-muted: #6b5b4e;
-  --color-surface: #faf7f2;
-  --color-primary: #3b2314;
-  --color-accent: #c45c3e;
+  --color-text: #0e2a42;
+  --color-muted: #5a7a8a;
+  --color-surface: #f7fbfc;
+  --color-primary: #0e2a42;
+  --color-accent: #2b9eb3;
 
   /* Sizing */
   --radius-sm: 0.375rem;
@@ -29,10 +31,10 @@
   --radius-lg: 0.75rem;
   --radius-full: 9999px;
 
-  /* Shadows */
-  --shadow-sm: 0 1px 2px color-mix(in srgb, var(--color-text) 8%, transparent);
-  --shadow-md: 0 4px 12px color-mix(in srgb, var(--color-text) 12%, transparent);
-  --shadow-lg: 0 8px 24px color-mix(in srgb, var(--color-text) 14%, transparent);
+  /* Shadows — cool, subtle, never warm */
+  --shadow-sm: 0 1px 2px color-mix(in srgb, var(--color-text) 10%, transparent);
+  --shadow-md: 0 4px 12px color-mix(in srgb, var(--color-text) 14%, transparent);
+  --shadow-lg: 0 8px 24px color-mix(in srgb, var(--color-text) 18%, transparent);
 
   /* Transitions */
   --ease-default: cubic-bezier(0.4, 0, 0.2, 1);

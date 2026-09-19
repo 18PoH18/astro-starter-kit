@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320">
+  <defs>
+    <linearGradient id="lg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E7F6FA"/>
+      <stop offset="40%" stop-color="#D4EEF5"/>
+      <stop offset="75%" stop-color="#B8E0EC"/>
+      <stop offset="100%" stop-color="#9DD0E6"/>
+    </linearGradient>
+    <linearGradient id="ag" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2B9EB3"/>
+      <stop offset="100%" stop-color="#1D99B0"/>
+    </linearGradient>
+  </defs>
+  <circle cx="160" cy="160" r="152" fill="none" stroke="#4DA8C9" stroke-width="0.75" opacity="0.4"/>
+  <circle cx="160" cy="160" r="146" fill="none" stroke="#4DA8C9" stroke-width="0.5" opacity="0.25"/>
+  <ellipse cx="160" cy="175" rx="45" ry="30" fill="url(#lg)" stroke="url(#ag)" stroke-width="1"/>
+  <rect x="138" y="200" width="9" height="35" rx="4.5" fill="#2B9EB3"/>
+  <rect x="173" y="200" width="9" height="35" rx="4.5" fill="#2B9EB3"/>
+  <ellipse cx="142.5" cy="235" rx="4.2" ry="3.5" fill="#9DD0E6"/>
+  <ellipse cx="177.5" cy="235" rx="4.2" ry="3.5" fill="#9DD0E6"/>
+  <ellipse cx="160" cy="125" rx="22" ry="27" fill="url(#lg)" stroke="url(#ag)" stroke-width="1"/>
+  <ellipse cx="160" cy="100" rx="18" ry="10.5" fill="url(#lg)" stroke="url(#ag)" stroke-width="1.5"/>
+  <path d="M150,130 Q145,85 130,65 Q140,60 152,60 Q165,60 170,72 Q168,85 160,105 Z" fill="url(#ag)" stroke="#1D99B0" stroke-width="0.5"/>
+  <path d="M170,130 Q175,85 190,65 Q180,60 168,60 Q155,60 150,72 Q152,85 160,105 Z" fill="url(#ag)" stroke="#1D99B0" stroke-width="0.5"/>
+  <path d="M152,128 Q148,76 136,58" fill="none" stroke="#A7D9E8" stroke-width="0.5" opacity="0.7"/>
+  <path d="M168,128 Q172,76 184,58" fill="none" stroke="#A7D9E8" stroke-width="0.5" opacity="0.7"/>
+  <circle cx="152" cy="97" r="3.2" fill="#0E2A42"/>
+  <circle cx="153" cy="96" r="1" fill="#7FC1D6"/>
+  <circle cx="153.3" cy="95.7" r="0.5" fill="#FFFFFF"/>
+  <ellipse cx="155" cy="104" rx="1.5" ry="1" fill="#A7D9E8" opacity="0.6"/>
+  <circle cx="80" cy="100" r="4" fill="#D4EEF5" opacity="0.6"/>
+  <circle cx="240" cy="90" r="3" fill="#D4EEF5" opacity="0.5"/>
+  <circle cx="100" cy="240" r="3" fill="#D4EEF5" opacity="0.5"/>
+  <circle cx="225" cy="245" r="4" fill="#D4EEF5" opacity="0.6"/>
+  <circle cx="60" cy="180" r="2.5" fill="#D4EEF5" opacity="0.4"/>
+  <circle cx="260" cy="180" r="2.5" fill="#D4EEF5" opacity="0.4"/>
+  <circle cx="160" cy="65" r="2" fill="#D4EEF5" opacity="0.3"/>
+  <circle cx="160" cy="270" r="2" fill="#D4EEF5" opacity="0.3"/>
+</svg>

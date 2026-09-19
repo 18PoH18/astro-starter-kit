@@ -58,8 +58,11 @@ const domain = new URL(baseUrl).hostname.replace('www.', '');
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImageUrl} />
 
-    <!-- Favicon -->
+    <!-- Favicon: SVG (preferred) + PNG sizes + ICO fallback for legacy browsers -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
 
     <!-- Canonical -->
     <link rel="canonical" href={canonicalUrl} />
@@ -67,11 +70,11 @@ const domain = new URL(baseUrl).hostname.replace('www.', '');
     <!-- Page title -->
     <title>{fullTitle}</title>
 
-    <!-- Fonts: Playfair Display + Inter -->
+    <!-- Fonts: Lexend + Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -85,29 +88,33 @@ const domain = new URL(baseUrl).hostname.replace('www.', '');
         'description': site.description,
         'telephone': site.phone,
         'email': site.email,
-        'address': {
-          '@type': 'PostalAddress',
-          'streetAddress': site.address.split(',')[0].trim(),
-          'addressLocality': 'Portland',
-          'addressRegion': 'OR',
-          'postalCode': '97210',
-          'addressCountry': 'US',
-        },
+        'address': site.address
+          ? {
+              '@type': 'PostalAddress',
+              'streetAddress': site.address?.split(',')[0]?.trim() ?? '',
+              'addressLocality': 'Portland',
+              'addressRegion': 'OR',
+              'postalCode': '97210',
+              'addressCountry': 'US',
+            }
+          : undefined,
         'priceRange': '$$',
-        'openingHoursSpecification': Object.entries(site.hours)
-          .map(([day, hours]) => ({
-            '@type': 'OpeningHoursSpecification',
-            'dayOfWeek': day.charAt(0).toUpperCase() + day.slice(1).toLowerCase(),
-            'opens': hours.split('–')[0].trim().split(' ')[0] + ':00',
-            'closes': hours.split('–')[1]
-              .trim()
-              .split(' ')[0]
-              .replace(/(AM|PM)/gi, (m) =>
-                m === 'AM' ? 'AM' : 'PM'
-              ) +
-              ':00',
-          }))
-          .filter((oh) => oh.opens && oh.closes),
+        'openingHoursSpecification': (site.hours
+          ? Object.entries(site.hours)
+              .map(([day, hours]) => ({
+                '@type': 'OpeningHoursSpecification',
+                'dayOfWeek': day.charAt(0).toUpperCase() + day.slice(1).toLowerCase(),
+                'opens': hours.split('–')[0].trim().split(' ')[0] + ':00',
+                'closes': hours.split('–')[1]
+                  .trim()
+                  .split(' ')[0]
+                  .replace(/(AM|PM)/gi, (m) =>
+                    m === 'AM' ? 'AM' : 'PM'
+                  ) +
+                  ':00',
+              }))
+              .filter((oh) => oh.opens && oh.closes)
+          : undefined),
       })}
     />
 
